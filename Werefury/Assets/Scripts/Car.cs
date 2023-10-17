@@ -4,6 +4,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     private bool _playerIsInCar = false;
+<<<<<<< HEAD
     private GameObject Player;
     private GameObject carUi;
     private bool playerNear = false;
@@ -18,6 +19,7 @@ public class Car : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("IN");
             playerNear = true;
         }
     }
@@ -27,9 +29,12 @@ public class Car : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNear = false;
-           
+            Debug.Log("OUt");
         }
     }
+=======
+    public GameObject Player;
+>>>>>>> 1c4ec010d706ece019e3484096a75e746cf6ecc6
 
     private void Update()
     {
