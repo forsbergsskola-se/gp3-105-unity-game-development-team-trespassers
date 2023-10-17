@@ -4,7 +4,36 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     private bool _playerIsInCar = false;
+<<<<<<< HEAD
     public GameObject Player;
+=======
+    private GameObject Player;
+    private GameObject carUi;
+    private bool playerNear = false;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        Player = GameObject.FindWithTag("Player");
+        spriteRenderer = Player.GetComponent<SpriteRenderer>();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerNear = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerNear = false;
+           
+        }
+    }
+>>>>>>> parent of 49bf192 (Revert "Yup! Merges!")
 
     private void Update()
     {
