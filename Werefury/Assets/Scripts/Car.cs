@@ -4,7 +4,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     private bool _playerIsInCar = false;
-    private GameObject Player;
+    public GameObject Player;
 
     private void Update()
     {
