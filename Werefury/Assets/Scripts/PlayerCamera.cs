@@ -5,16 +5,22 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] private Vector3 offset = new Vector3(0f, 0f, 0f);
-    [SerializeField] private GameObject cameraObject;
+    private GameObject cameraObject;
     private Transform cameraPos;
     private Vector3 currentVelocity;
     [SerializeField] private float smoothTime = 0.3f;
 
     void Start()
     {
+        
         cameraPos = cameraObject.GetComponent<Transform>();
     }
 
+
+    public void FindPlayer()
+    {
+        cameraObject = GameObject.Find("Player");
+    }
     void LateUpdate()
     {
         Vector3 newPosition = transform.position + offset;
