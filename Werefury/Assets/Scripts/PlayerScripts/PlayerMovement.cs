@@ -6,25 +6,42 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f; 
-
-    public Rigidbody rb;
-
-    private GameObject player;
-
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        
     }
+
+    public float speed = 0.05f;
+
+    // Update is called once per frame
+
+
 
     void FixedUpdate()
     {
-        player = GameObject.FindWithTag("Player");
-        rb = player.GetComponent<Rigidbody>();
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.velocity = movement * speed;
+        Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
+        if (Input.GetButton("Horizontal"))
+        {
+            if (Input.GetAxisRaw("Horizontal") > 0)
+            {
+                transform.Translate(speed, 0 ,0);
+            }
+            else
+            {
+                transform.Translate(-speed, 0 ,0);
+            }
+        } 
+        if (Input.GetButton("Vertical"))
+        {
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                transform.Translate(0, 0 ,speed);
+            }
+            else
+            {
+                transform.Translate(0, 0 ,-speed);
+            }
+        } 
     }
 }
