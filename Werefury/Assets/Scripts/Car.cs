@@ -4,7 +4,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     private bool _playerIsInCar = false;
-    private GameObject player;
+    private GameObject Player;
 
     private void Update()
     {
@@ -20,17 +20,18 @@ public class Car : MonoBehaviour
 
     void EnterCar()
     {
-        player.SetActive(false);
-        player.transform.parent = transform;
-        player.transform.localPosition = new Vector3(0, 1, 0);
+        gameObject.tag = "Player";
+        Player.SetActive(false);
+        Player.transform.parent = transform;
+        Player.transform.localPosition = new Vector3(0, 1, 0);
         _playerIsInCar = true;
     }
-
     void ExitCar()
     {
-        player.transform.parent = null;
-        player.transform.position = transform.position + new Vector3(0, 1, 0);
-        player.SetActive(true);
+        gameObject.tag = "Untagged";
+        Player.transform.parent = null;
+        Player.transform.position = transform.position + new Vector3(0, 1, 0);
+        Player.SetActive(true);
         _playerIsInCar = false;
     }
 }
