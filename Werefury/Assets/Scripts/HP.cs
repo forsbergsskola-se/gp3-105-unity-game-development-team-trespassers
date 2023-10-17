@@ -24,6 +24,8 @@ public class HP : MonoBehaviour
         }
         else if (hp == 0)
         {
+            //Countdown
+            //Damage Player if still in the car
             Destroy(this.gameObject);
         }
         
