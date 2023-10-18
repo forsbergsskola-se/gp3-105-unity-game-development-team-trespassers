@@ -3,11 +3,11 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 25f;
-    [SerializeField] private float maxSpeed = 10f; // Max speed of the car.
-    [SerializeField] private float acceleration = 2.0f; // Acceleration rate.
-    [SerializeField] private float deacceleration = 3.0f; // Deceleration rate.
-    [SerializeField] private float brakeDeacceleration = 5.0f; // Brake deceleration rate.
-    [SerializeField] private float brakeAcceleration = 5.0f; // Brake deceleration rate.
+    [SerializeField] private float maxSpeed = 10f; 
+    [SerializeField] private float acceleration = 2.0f; 
+    [SerializeField] private float deacceleration = 3.0f; 
+    [SerializeField] private float brakeDeacceleration = 5.0f; 
+    [SerializeField] private float brakeAcceleration = 5.0f; 
     [SerializeField] private Car car;
 
     private Rigidbody rb;
@@ -52,18 +52,16 @@ public class CarMovement : MonoBehaviour
         }
         else
         {
-            // Apply acceleration and regular deceleration.
             if (movement > 0 && targetSpeed > currentSpeed)
             {
                 currentSpeed += acceleration * Time.deltaTime;
             }
             else if (movement < 0 && targetSpeed < currentSpeed)
             {
-                currentSpeed -= acceleration * Time.deltaTime; // Apply acceleration in reverse.
+                currentSpeed -= acceleration * Time.deltaTime; 
             }
         }
-
-        // Ensure speed stays within limits.
+        
         currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
 
         Vector3 moveDirection = transform.forward * currentSpeed * Time.deltaTime;
