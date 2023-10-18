@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.35568884, g: 0.3502638, b: 0.3740369, a: 1}
+  m_IndirectSpecularColor: {r: 0.3556889, g: 0.35026392, b: 0.3740371, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,13 +313,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69445869}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.49999994, y: -0, z: -0, w: 0.86602545}
-  m_LocalPosition: {x: -55, y: 32, z: 180}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -55, y: 32, z: 202.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 120, y: 180, z: 180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &73956548
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,13 +449,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81633143}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000011920929, y: 0.35355344, z: -0.61237246, w: 0.7071067}
-  m_LocalPosition: {x: -2.2, y: 4.5984263, z: -5.5296397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1496838946}
-  m_LocalEulerAnglesHint: {x: 120, y: 180, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114837870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,7 +2638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496838940}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.35355335, y: -0.61237246, z: 0.35355335, w: 0.61237246}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -48.912334, y: 4.5598903, z: 201}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
@@ -2647,7 +2647,7 @@ Transform:
   - {fileID: 81633144}
   - {fileID: 563521935}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1496838947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2662,6 +2662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraObject: {fileID: 69445869}
   smoothTime: 0.3
+  offset: {x: 0, y: 10, z: 0}
 --- !u!212 &1496838948
 SpriteRenderer:
   m_ObjectHideFlags: 0
