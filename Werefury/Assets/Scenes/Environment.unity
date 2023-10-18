@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3556889, g: 0.35026392, b: 0.3740371, a: 1}
+  m_IndirectSpecularColor: {r: 0.35568884, g: 0.3502638, b: 0.3740369, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -287,7 +287,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 400
-  field of view: 26.991467
+  field of view: 57
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -313,13 +313,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69445869}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0.00008023939, z: -0.00008023939, w: 0.7071068}
-  m_LocalPosition: {x: -40.28, y: 11.63, z: 200.96}
+  m_LocalRotation: {x: 0.49999994, y: 0, z: 0, w: 0.86602545}
+  m_LocalPosition: {x: -55, y: 40, z: 190}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -0.013}
+  m_LocalEulerAnglesHint: {x: 120, y: 180, z: 180}
 --- !u!1 &73956548
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,13 +449,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81633143}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.00000011920929, y: 0.000000059604645, z: 0.000000029802322, w: 1}
+  m_LocalPosition: {x: -0.20000306, y: 1.0721482, z: -21.857012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1496838946}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
 --- !u!1 &114837870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,8 +2638,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496838940}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -50, y: 2.676, z: 201}
+  m_LocalRotation: {x: 0.35355335, y: -0.61237246, z: 0.35355335, w: 0.61237246}
+  m_LocalPosition: {x: -48.912334, y: 4.5598903, z: 201}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2647,7 +2647,7 @@ Transform:
   - {fileID: 81633144}
   - {fileID: 563521935}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
 --- !u!114 &1496838947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,7 +2660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f7896452e97a741a3353295ece0ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 37, z: 0}
   cameraObject: {fileID: 69445869}
   smoothTime: 0.3
 --- !u!212 &1496838948
