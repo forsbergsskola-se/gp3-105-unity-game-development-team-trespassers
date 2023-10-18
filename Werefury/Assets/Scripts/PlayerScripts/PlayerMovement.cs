@@ -19,7 +19,10 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         player = GameObject.FindWithTag("Player");
         rb = player.GetComponent<Rigidbody>();
-        if (car._playerIsInCar)
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        rb.velocity = movement * speed;
+        
+        /*if (car._playerIsInCar)
         {
             
         }
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.velocity = movement * speed;
         }
+        */
     }
 
 }
