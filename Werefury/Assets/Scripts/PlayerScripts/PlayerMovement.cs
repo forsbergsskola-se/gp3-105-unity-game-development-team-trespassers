@@ -1,13 +1,11 @@
 using UnityEngine;
 
-
 public class PlayerMovement : MonoBehaviour
 {
-
-    private Car car; 
     public float speed;
     public Rigidbody rb;
     private GameObject player;
+    [SerializeField] public Car car;
     void Awake()
     {
         player = GameObject.FindWithTag("Player");
@@ -19,10 +17,7 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         player = GameObject.FindWithTag("Player");
         rb = player.GetComponent<Rigidbody>();
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.velocity = movement * speed;
-        
-        /*if (car._playerIsInCar)
+        if (car._playerIsInCar)
         {
             
         }
@@ -31,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.velocity = movement * speed;
         }
-        */
+        
     }
 
 }
