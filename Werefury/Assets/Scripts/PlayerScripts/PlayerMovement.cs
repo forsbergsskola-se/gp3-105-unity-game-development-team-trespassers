@@ -2,22 +2,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
-    public Rigidbody rb;
-    private GameObject player;
+    [SerializeField] private float speed;
+    private Rigidbody rb;
     [SerializeField] public Car car;
     void Awake()
     {
-        player = GameObject.FindWithTag("Player");
+        rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
     {
-        player = GameObject.FindWithTag("Player");
-        rb = player.GetComponent<Rigidbody>();
-        if (car._playerIsInCar)
-        {
-        }
         if (!car._playerIsInCar){
             Walking();
         }
