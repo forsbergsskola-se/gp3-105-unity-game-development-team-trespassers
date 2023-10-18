@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3556889, g: 0.35026392, b: 0.3740371, a: 1}
+  m_IndirectSpecularColor: {r: 0.35568884, g: 0.3502638, b: 0.3740369, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,13 +313,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69445869}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0.00008023939, z: -0.00008023939, w: 0.7071068}
-  m_LocalPosition: {x: -40.28, y: 11.63, z: 200.96}
+  m_LocalRotation: {x: 0.35355335, y: -0.61237246, z: 0.35355335, w: 0.61237246}
+  m_LocalPosition: {x: 0, y: 100, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -0.013}
+  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
 --- !u!1 &73956548
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,13 +449,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81633143}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.35355335, y: -0.61237246, z: 0.35355335, w: 0.61237246}
+  m_LocalPosition: {x: 0, y: 100, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1496838946}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
 --- !u!1 &114837870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,7 +2638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496838940}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.35355335, y: -0.61237246, z: 0.35355335, w: 0.61237246}
   m_LocalPosition: {x: -50, y: 2.676, z: 201}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
@@ -2647,7 +2647,7 @@ Transform:
   - {fileID: 81633144}
   - {fileID: 563521935}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 90, z: 180}
 --- !u!114 &1496838947
 MonoBehaviour:
   m_ObjectHideFlags: 0
