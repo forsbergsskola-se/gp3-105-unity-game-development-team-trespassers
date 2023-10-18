@@ -7,15 +7,11 @@ public class PlayerCamera : MonoBehaviour
     private Vector3 currentVelocity;
     [SerializeField] private float smoothTime = 0.3f;
     [SerializeField] private Vector3 offset = new Vector3(0f, 0f, 0f);
-
-    void Awake()
-    {
-        GameObject CameraPosObject = GameObject.Find("CameraPos");
-        cameraPos = CameraPosObject.transform;
-    }
     
     void FixedUpdate()
     {
+        GameObject CameraPosObject = GameObject.Find("CameraPos");
+        cameraPos = CameraPosObject.transform;
         Vector3 newPosition = transform.position + offset;
         cameraPos.position = newPosition;
         cameraObject.transform.position = Vector3.SmoothDamp(

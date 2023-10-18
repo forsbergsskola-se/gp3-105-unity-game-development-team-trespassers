@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    private bool _playerIsInCar = false;
+    public bool _playerIsInCar = false;
     private GameObject Player;
     private GameObject carUi;
     private bool playerNear = false;
     private SpriteRenderer spriteRenderer;
     private PlayerMovement playerMovement;
+    private Collider playerCollider;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,6 +33,7 @@ public class Car : MonoBehaviour
     {
         Player = GameObject.FindWithTag("Player");
         spriteRenderer = Player.GetComponent<SpriteRenderer>();
+        playerCollider = Player.GetComponentInChildren<Collider>();
     }
     private void Update()
     {
@@ -45,11 +47,20 @@ public class Car : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (_playerIsInCar)
+        {
+            Player.transform.localPosition = new Vector3(0, 1, 0);
+        }
+    }
+
     void EnterCar()
     {
         gameObject.tag = "Player";
         Player.tag = "Untagged";
         spriteRenderer.enabled = false;
+        playerCollider.enabled = false;
         Player.transform.parent = transform;
         Player.transform.localPosition = new Vector3(0, 1, 0);
         _playerIsInCar = true;
@@ -61,6 +72,7 @@ public class Car : MonoBehaviour
         gameObject.tag = "Untagged";
         Player.tag = "Player";
         spriteRenderer.enabled = true;
+        playerCollider.enabled = true;
         Player.transform.parent = null;
         Player.transform.position = transform.position + new Vector3(0, 1, 0);
         Player.SetActive(true);
