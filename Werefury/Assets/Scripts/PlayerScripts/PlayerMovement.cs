@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.velocity = movement * speed;
     }
-    void rotateInShootDirection() {
+   /* void rotateInShootDirection() {
         Vector3 newRotation = Vector3.RotateTowards(transform.forward, shootDirection, 0.01f, 0.0f);
         transform.rotation = Quaternion.LookRotation(newRotation);
-    }
+    }*/
 }

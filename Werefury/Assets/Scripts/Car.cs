@@ -8,6 +8,7 @@ public class Car : MonoBehaviour
     private GameObject carUi;
     private bool playerNear = false;
     private SpriteRenderer spriteRenderer;
+    private PlayerMovement playerMovement;
 
     private void OnTriggerEnter(Collider other)
     {
