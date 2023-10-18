@@ -2,25 +2,71 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    public float rotationSpeed = 25f;
-    public float movementSpeed = 5f;
-    
-    // Update is called once per frame
+    [SerializeField] private float rotationSpeed = 25f;
+    [SerializeField] private float maxSpeed = 10f; // Max speed of the car.
+    [SerializeField] private float acceleration = 2.0f; // Acceleration rate.
+    [SerializeField] private float deacceleration = 3.0f; // Deceleration rate.
+    [SerializeField] private float brakeDeacceleration = 5.0f; // Brake deceleration rate.
+    [SerializeField] private float brakeAcceleration = 5.0f; // Brake deceleration rate.
+    [SerializeField] private Car car;
+
+    private Rigidbody rb;
+    private float currentSpeed = 0f;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     void FixedUpdate()
     {
-        RotateCar();
-        void RotateCar()
+        if (car._playerIsInCar)
         {
-            //How rotate head of the car?
-            float rotation = Input.GetAxis("Horizontal")*rotationSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.up, rotation);
+            RotateCar();
+            MoveCar();
         }
-        moveCar();
-        void moveCar()
+    }
+
+    private void RotateCar()
+    {
+        float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+        transform.Rotate(Vector3.up, rotation);
+    }
+
+    private void MoveCar()
+    {
+        float movement = Input.GetAxis("Vertical");
+        float targetSpeed = movement * maxSpeed;
+
+        if (Input.GetKey(KeyCode.Space))
         {
-            float movement = Input.GetAxis("Vertical");
-            Vector3 moveDirection = transform.forward * movement * movementSpeed * Time.deltaTime;
-            transform.position += moveDirection;
+            if (currentSpeed >= 0)
+            {
+                 currentSpeed -= brakeDeacceleration * Time.deltaTime;
+            }
+
+            if (currentSpeed <= 0)
+            {
+                currentSpeed += brakeAcceleration * Time.deltaTime;
+            }
         }
+        else
+        {
+            // Apply acceleration and regular deceleration.
+            if (movement > 0 && targetSpeed > currentSpeed)
+            {
+                currentSpeed += acceleration * Time.deltaTime;
+            }
+            else if (movement < 0 && targetSpeed < currentSpeed)
+            {
+                currentSpeed -= acceleration * Time.deltaTime; // Apply acceleration in reverse.
+            }
+        }
+
+        // Ensure speed stays within limits.
+        currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
+
+        Vector3 moveDirection = transform.forward * currentSpeed * Time.deltaTime;
+        rb.MovePosition(transform.position + moveDirection);
     }
 }
