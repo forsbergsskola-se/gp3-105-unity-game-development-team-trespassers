@@ -58,6 +58,8 @@ public class Car : MonoBehaviour
     void ExitCar()
     {
         gameObject.tag = "Untagged";
+        Player.tag = "Player";
+        spriteRenderer.enabled = true;
         Player.transform.parent = null;
         Player.transform.position = transform.position + new Vector3(0, 1, 0);
         Player.SetActive(true);
