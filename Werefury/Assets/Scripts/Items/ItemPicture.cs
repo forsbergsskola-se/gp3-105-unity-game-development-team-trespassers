@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemPicture : MonoBehaviour
+namespace Items
 {
+    public class ItemPicture : MonoBehaviour
+    {
 
+    }
 }
