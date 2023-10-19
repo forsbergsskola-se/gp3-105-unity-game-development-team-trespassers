@@ -37,7 +37,7 @@ public class Car : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !_playerIsInCar && !playerNear)
+        if (Input.GetKeyDown(KeyCode.E) && !_playerIsInCar && playerNear)
         {
             EnterCar();
         }
