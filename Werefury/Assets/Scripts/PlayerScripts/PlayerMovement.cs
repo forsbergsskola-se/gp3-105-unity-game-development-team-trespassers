@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!car._playerIsInCar){
             Walking();
-            OnMouseDrag();
+            // OnMouseDrag();
         }
     }
     void Walking()
@@ -25,13 +25,13 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = movement * speed;
     }
     
-    void OnMouseDrag()
+    /*void OnMouseDrag()
     {
         float turn = 2 * Input.GetAxis("Mouse X");
         transform.Rotate(0, 0, turn);
        
         
-    }
+    }*/
         
 }
 
