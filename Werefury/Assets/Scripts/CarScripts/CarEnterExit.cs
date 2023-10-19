@@ -11,18 +11,18 @@ public class Car : MonoBehaviour
     private PlayerMovement playerMovement;
     private Collider playerCollider;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("IN");
             playerNear = true;
         }
     }
     
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             playerNear = false;
             Debug.Log("OUt");
