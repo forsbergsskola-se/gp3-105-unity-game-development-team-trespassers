@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    //this is on item
     // Reference to the inventory script
     public Items inventory;
 
@@ -14,16 +15,18 @@ public class Pickup : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         // Check if the collider that entered the trigger is the player
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             // Add the GameObject to the inventory
             inventory.AddItem(gameObject);
 
+            //TODO ADD INSTANTIATE ON PLAYER?
+            
             // Destroy the pickup GameObject
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

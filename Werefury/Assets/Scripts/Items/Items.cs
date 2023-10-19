@@ -5,43 +5,57 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
-
-    [SerializeField] private List<GameObject> items = new List<GameObject>();
-
-    // Add an item to the inventory
+    //This is on char
+    [SerializeField] private GameObject HeldItem1;
+    [SerializeField] private GameObject HeldItem2;
+    [SerializeField] private GameObject YouCantdothat;
+    
+    // Add an item to the Hands
+    private void Update()
+    {
+        ThrowWeapon();
+    }
     public void AddItem(GameObject item)
     {
-        items.Add(item);
+        
+        if (HeldItem1 == null)
+        {
+            HeldItem1 = item;
+        }
+        else if (HeldItem2 = null)
+        {
+            HeldItem2 = item;
+        }
+        else
+        {
+            Instantiate(YouCantdothat);
+        }
     }
 
-    // Remove an item from the inventory
-    public void RemoveItem(GameObject item)
+    public void ThrowWeapon()
     {
-        items.Remove(item);
+        if (Input.GetKey(KeyCode.G))
+        {
+            if (HeldItem1 != null)
+            {
+                // TODO DROP Instantiate()
+                HeldItem1 = null;
+            }
+            else if (HeldItem2 != null)
+            {
+                // TODO DROP Instantiate()
+                HeldItem2 = null;
+            }
+            else
+            {
+                YouCantdothat.SetActive(true);
+            }
+            
+        }
     }
 
-    // Check if the inventory contains a specific item
-    public bool ContainsItem(GameObject item)
-    {
-        return items.Contains(item);
-    }
 
-    // Get the count of items in the inventory
-    public int GetItemCount()
-    {
-        return items.Count;
-    }
+  
 }
 
-// Item class to represent items in the inventory
-public class Item
-{
-    public string itemName;
-    public int itemID;
 
-    public Item(string name, int id)
-    {
-        itemName = name;
-        itemID = id;
-    }
-}
