@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!car._playerIsInCar){
             Walking();
+            OnMouseDrag();
         }
     }
     void Walking()
@@ -23,4 +24,15 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.velocity = movement * speed;
     }
+    
+    void OnMouseDrag()
+    {
+        float turn = 2 * Input.GetAxis("Mouse X");
+        transform.Rotate(0, 0, turn);
+       
+        
+    }
+        
 }
+
+
