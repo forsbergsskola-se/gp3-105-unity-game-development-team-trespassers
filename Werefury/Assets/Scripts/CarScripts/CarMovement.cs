@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CarMovement : MonoBehaviour
@@ -9,6 +10,7 @@ public class CarMovement : MonoBehaviour
     [SerializeField] private float brakeDeacceleration = 5.0f; 
     [SerializeField] private float brakeAcceleration = 5.0f; 
     [SerializeField] private Car car;
+    [SerializeField] private HP hp;
 
     private Rigidbody rb;
     private float currentSpeed = 0f;
@@ -16,6 +18,15 @@ public class CarMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Building"))
+        {
+            currentSpeed = 0f;
+            hp.TakeDamage(10);
+        }
     }
 
     void FixedUpdate()
