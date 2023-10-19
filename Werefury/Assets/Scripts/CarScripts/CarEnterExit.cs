@@ -10,6 +10,32 @@ public class Car : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private PlayerMovement playerMovement;
     private Collider playerCollider;
+    
+    private void Start()
+    {
+        Player = GameObject.FindWithTag("Player");
+        spriteRenderer = Player.GetComponent<SpriteRenderer>();
+        playerCollider = Player.GetComponentInChildren<Collider>();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && !_playerIsInCar && playerNear)
+        {
+            EnterCar();
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && _playerIsInCar)
+        {
+            ExitCar();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (_playerIsInCar)
+        {
+            Player.transform.localPosition = new Vector3(0, 1, 0);
+        }
+    }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -29,32 +55,6 @@ public class Car : MonoBehaviour
         }
     }
     
-    private void Start()
-    {
-        Player = GameObject.FindWithTag("Player");
-        spriteRenderer = Player.GetComponent<SpriteRenderer>();
-        playerCollider = Player.GetComponentInChildren<Collider>();
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && !_playerIsInCar && !playerNear)
-        {
-            EnterCar();
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && _playerIsInCar)
-        {
-            ExitCar();
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (_playerIsInCar)
-        {
-            Player.transform.localPosition = new Vector3(0, 1, 0);
-        }
-    }
-
     void EnterCar()
     {
         gameObject.tag = "Player";

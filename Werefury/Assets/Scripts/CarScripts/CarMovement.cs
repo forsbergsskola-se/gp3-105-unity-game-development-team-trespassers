@@ -6,7 +6,6 @@ public class CarMovement : MonoBehaviour
     [SerializeField] private float rotationSpeed = 25f;
     [SerializeField] private float maxSpeed = 10f; 
     [SerializeField] private float acceleration = 2.0f; 
-    [SerializeField] private float deacceleration = 3.0f; 
     [SerializeField] private float brakeDeacceleration = 5.0f; 
     [SerializeField] private float brakeAcceleration = 5.0f; 
     [SerializeField] private Car car;
@@ -24,6 +23,7 @@ public class CarMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Building"))
         {
+            Debug.Log("This is damage");
             currentSpeed = 0f;
             hp.TakeDamage(10);
         }
