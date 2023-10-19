@@ -10,24 +10,6 @@ public class Car : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private PlayerMovement playerMovement;
     private Collider playerCollider;
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("IN");
-            playerNear = true;
-        }
-    }
-    
-    private void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            playerNear = false;
-            Debug.Log("OUt");
-        }
-    }
     
     private void Start()
     {
@@ -55,6 +37,24 @@ public class Car : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("IN");
+            playerNear = true;
+        }
+    }
+    
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerNear = false;
+            Debug.Log("OUt");
+        }
+    }
+    
     void EnterCar()
     {
         gameObject.tag = "Player";
