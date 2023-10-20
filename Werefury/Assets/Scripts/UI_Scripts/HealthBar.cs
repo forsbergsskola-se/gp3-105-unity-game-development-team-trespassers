@@ -8,7 +8,7 @@ namespace UI_Scripts
     public class HealthBar : MonoBehaviour
     {
         public Image healthFill;
-        //[SerializeField] public Text healthText;
+        [SerializeField] public Text healthText;
         public PlayerHealth playerHealth; // Reference for player health.
         private int _maxHealth;
         private int _currentHealth;
@@ -27,7 +27,7 @@ namespace UI_Scripts
 
         private void UpdateHealthText()
         {
-          // healthText.text = _currentHealth.ToString(); // Update the health text
+          healthText.text = _currentHealth.ToString(); // Update the health text
         }
 
         private void UpdateHealthBar()
