@@ -15,7 +15,6 @@ public class KillCount : MonoBehaviour
 
     private void UpdateKillCount()
     {
-        
         killCount.text = kills.ToString();
     }
     public static void AddKill() //Call AddKill to killable objects.
