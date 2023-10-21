@@ -2456,6 +2456,7 @@ GameObject:
   - component: {fileID: 828101945}
   - component: {fileID: 828101947}
   - component: {fileID: 828101946}
+  - component: {fileID: 828101948}
   m_Layer: 5
   m_Name: Currency
   m_TagString: Untagged
@@ -2521,6 +2522,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828101944}
   m_CullTransparentMesh: 1
+--- !u!114 &828101948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828101944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3cdd4e8664013449ef947e00b3dda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currencyAmount: {fileID: 1621186883}
+  currency: 0
 --- !u!1 &1051877712
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,7 +4188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $$$:0
+  m_Text: 0
 --- !u!1 &1686707309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +4481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+  minMoney: 10
+  maxMoney: 50
+  currency: {fileID: 828101948}
 --- !u!1 &1757006266
 GameObject:
   m_ObjectHideFlags: 0
