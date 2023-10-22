@@ -5,14 +5,15 @@ namespace Items
     public class Items : MonoBehaviour
     {
         //This is on char
-        [SerializeField] private GameObject HeldItem1;
-        [SerializeField] private GameObject HeldItem2;
+        [SerializeField] public GameObject HeldItem1;
+        [SerializeField] public GameObject HeldItem2;
         [SerializeField] private GameObject YouCantdothat;
     
         // Add an item to the Hands
         private void Update()
         {
             ThrowWeapon();
+            
         }
         public void AddItem(GameObject item)
         {
@@ -29,6 +30,12 @@ namespace Items
             {
                 Instantiate(YouCantdothat);
             }
+        }
+
+        public void InitializeWeapon()
+        {
+            //ToDo Reference to Some Weapon Referencer hand 1 and hand 2, 
+            //ToDo Initilize script on the component
         }
 
         public void ThrowWeapon()
