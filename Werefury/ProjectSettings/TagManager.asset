@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CameraPos
   - Building
+  - Gun
   layers:
   - Default
   - TransparentFX
