@@ -3,7 +3,7 @@ using UnityEngine.UI;
 public class KillCount : MonoBehaviour
 {
     public Text killCount;
-    public static int kills;
+    public int kills;
     void Start()
     {
         kills = 0;
@@ -17,7 +17,7 @@ public class KillCount : MonoBehaviour
     {
         killCount.text = kills.ToString();
     }
-    public static void AddKill() //Call AddKill to killable objects.
+    public  void AddKill() //Call AddKill to killable objects.
     {
         kills++;
     }

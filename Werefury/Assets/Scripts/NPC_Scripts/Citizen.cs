@@ -15,9 +15,8 @@ public class Citizen : MonoBehaviour
     }
 
     public void Update()
-    {
-        TakeDamage(10); //this can be called on the bullet, melee weapon or the player.-Adjust the damage.
-        KillCount.AddKill();
+    { 
+       
     }
 
     public void TakeDamage(float damageAmount)
