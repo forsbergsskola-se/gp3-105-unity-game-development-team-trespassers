@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Items
@@ -5,16 +6,31 @@ namespace Items
     public class Items : MonoBehaviour
     {
         //This is on char
+
         [SerializeField] public GameObject HeldItem1;
         [SerializeField] public GameObject HeldItem2;
         [SerializeField] private GameObject YouCantdothat;
     
         // Add an item to the Hands
+        [SerializeField] private GameObject YouCantDoThatPrefab;
+        [SerializeField] private Transform dropLocation;
+
         private void Update()
         {
-            ThrowWeapon();
-            
+            // Handle input to switch weapons
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                SwitchWeapon();
+            }
+
+            // Handle input to throw the held item
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                Drop();
+            }
+            InstantiateWeapon();
         }
+
         public void AddItem(GameObject item)
         {
         
@@ -22,46 +38,62 @@ namespace Items
             {
                 HeldItem1 = item;
             }
-            else if (HeldItem2 = null)
+            else if (HeldItem2 == null)
             {
                 HeldItem2 = item;
             }
             else
             {
                 Instantiate(YouCantdothat);
+                // Instantiate the "YouCantDoThat" object when no slots are available.
             }
         }
-
-        public void InitializeWeapon()
+        
+        public void SwitchWeapon()
         {
-            //ToDo Reference to Some Weapon Referencer hand 1 and hand 2, 
-            //ToDo Initilize script on the component
-        }
-
-        public void ThrowWeapon()
-        {
-            if (Input.GetKey(KeyCode.G))
+            if (HeldItem1 != null && HeldItem2 != null)
             {
-                if (HeldItem1 != null)
-                {
-                    // TODO DROP Instantiate()
-                    HeldItem1 = null;
-                }
-                else if (HeldItem2 != null)
-                {
-                    // TODO DROP Instantiate()
-                    HeldItem2 = null;
-                }
-                else
-                {
-                    YouCantdothat.SetActive(true);
-                }
-            
+                GameObject tempItem = HeldItem1;
+                HeldItem1 = HeldItem2;
+                HeldItem2 = tempItem;
+                
             }
         }
-
-
-  
+        
+        public void InstantiateWeapon()
+        {
+            
+            Gunscript myScript = GetComponent<Gunscript>();
+            //Adds the Gun script.
+            if(HeldItem1 != null && HeldItem1.CompareTag("Gun"))
+            {
+                myScript.enabled = true;
+            }
+            else if (HeldItem1 == null)
+            {
+                myScript.enabled = false;
+            }
+            
+        }
+        
+        public void Drop()
+        {
+            if (HeldItem2 != null && dropLocation != null)
+            {
+             
+                GameObject droppedItem = Instantiate(HeldItem2, dropLocation.position, dropLocation.rotation);
+                droppedItem.SetActive(true);
+                HeldItem2 = null;
+                
+            }
+            else if (HeldItem1 != null && dropLocation != null)
+            {
+                GameObject droppedItem = Instantiate(HeldItem1, dropLocation.position, dropLocation.rotation);
+                droppedItem.SetActive(true);
+                HeldItem1 = null;
+            }
+        }
+        
     }
 }
 
