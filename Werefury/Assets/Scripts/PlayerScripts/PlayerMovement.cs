@@ -17,7 +17,7 @@ namespace PlayerScripts
         {
             if (!car._playerIsInCar){
                 Walking();
-                OnMouseDrag();
+                
             }
         }
         void Walking()
@@ -28,13 +28,13 @@ namespace PlayerScripts
             rb.velocity = movement * speed;
         }
     
-        void OnMouseDrag()
+       /* void OnMouseDrag()
         {
             float turn = 2 * Input.GetAxis("Mouse X");
             transform.Rotate(0, 0, turn);
        
         
-        }
+        }*/
         
     }
 }
