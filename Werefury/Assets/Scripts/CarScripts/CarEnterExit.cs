@@ -9,14 +9,13 @@ namespace CarScripts
         private GameObject Player;
         private GameObject carUi;
         private bool playerNear = false;
-        private SpriteRenderer spriteRenderer;
+        [SerializeField] private SpriteRenderer spriteRenderer;
         private PlayerMovement playerMovement;
         private Collider playerCollider;
     
         private void Start()
         {
             Player = GameObject.FindWithTag("Player");
-            spriteRenderer = Player.GetComponent<SpriteRenderer>();
             playerCollider = Player.GetComponentInChildren<Collider>();
         }
         private void Update()
