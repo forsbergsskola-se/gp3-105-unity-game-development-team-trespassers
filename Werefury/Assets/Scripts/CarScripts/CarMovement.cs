@@ -1,81 +1,83 @@
-using System;
 using UnityEngine;
 
-public class CarMovement : MonoBehaviour
+namespace CarScripts
 {
-    [SerializeField] private float rotationSpeed = 25f;
-    [SerializeField] private float maxSpeed = 10f; 
-    [SerializeField] private float acceleration = 2.0f; 
-    [SerializeField] private float brakeDeacceleration = 5.0f; 
-    [SerializeField] private float brakeAcceleration = 5.0f; 
-    [SerializeField] private Car car;
-    [SerializeField] private HP hp;
-
-    private Rigidbody rb;
-    private float currentSpeed = 0f;
-
-    private void Start()
+    public class CarMovement : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody>();
-    }
+        [SerializeField] private float rotationSpeed = 25f;
+        [SerializeField] private float maxSpeed = 10f; 
+        [SerializeField] private float acceleration = 2.0f; 
+        [SerializeField] private float brakeDeacceleration = 5.0f; 
+        [SerializeField] private float brakeAcceleration = 5.0f; 
+        [SerializeField] private Car car;
+        [SerializeField] private HP hp;
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Building"))
+        private Rigidbody rb;
+        private float currentSpeed = 0f;
+
+        private void Start()
         {
-            Debug.Log("This is damage");
-            currentSpeed = 0f;
-            hp.TakeDamage(10);
+            rb = GetComponent<Rigidbody>();
         }
-    }
 
-    void FixedUpdate()
-    {
-        if (car._playerIsInCar)
+        private void OnCollisionEnter(Collision other)
         {
-            RotateCar();
-            MoveCar();
-        }
-    }
-
-    private void RotateCar()
-    {
-        float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-        transform.Rotate(Vector3.up, rotation);
-    }
-
-    private void MoveCar()
-    {
-        float movement = Input.GetAxis("Vertical");
-        float targetSpeed = movement * maxSpeed;
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            if (currentSpeed >= 0)
+            if (other.gameObject.CompareTag("Building"))
             {
-                 currentSpeed -= brakeDeacceleration * Time.deltaTime;
-            }
-
-            if (currentSpeed <= 0)
-            {
-                currentSpeed += brakeAcceleration * Time.deltaTime;
+                Debug.Log("This is damage");
+                currentSpeed = 0f;
+                hp.TakeDamage(10);
             }
         }
-        else
+
+        void FixedUpdate()
         {
-            if (movement > 0 && targetSpeed > currentSpeed)
+            if (car._playerIsInCar)
             {
-                currentSpeed += acceleration * Time.deltaTime;
-            }
-            else if (movement < 0 && targetSpeed < currentSpeed)
-            {
-                currentSpeed -= acceleration * Time.deltaTime; 
+                RotateCar();
+                MoveCar();
             }
         }
+
+        private void RotateCar()
+        {
+            float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+            transform.Rotate(Vector3.up, rotation);
+        }
+
+        private void MoveCar()
+        {
+            float movement = Input.GetAxis("Vertical");
+            float targetSpeed = movement * maxSpeed;
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                if (currentSpeed >= 0)
+                {
+                    currentSpeed -= brakeDeacceleration * Time.deltaTime;
+                }
+
+                if (currentSpeed <= 0)
+                {
+                    currentSpeed += brakeAcceleration * Time.deltaTime;
+                }
+            }
+            else
+            {
+                if (movement > 0 && targetSpeed > currentSpeed)
+                {
+                    currentSpeed += acceleration * Time.deltaTime;
+                }
+                else if (movement < 0 && targetSpeed < currentSpeed)
+                {
+                    currentSpeed -= acceleration * Time.deltaTime; 
+                }
+            }
         
-        currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
+            currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
 
-        Vector3 moveDirection = transform.forward * currentSpeed * Time.deltaTime;
-        rb.MovePosition(transform.position + moveDirection);
+            Vector3 moveDirection = transform.forward * currentSpeed * Time.deltaTime;
+            rb.MovePosition(transform.position + moveDirection);
+        }
     }
 }

@@ -1,32 +1,35 @@
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+namespace Items
 {
-    //this is on item
-    // Reference to the inventory script
-    public Items inventory;
-
-    private void Start()
+    public class Pickup : MonoBehaviour
     {
-        // Ensure that the inventory reference is set
-        if (inventory == null)
+        //this is on item
+        // Reference to the inventory script
+        public Items inventory;
+
+        private void Start()
         {
-            Debug.LogWarning("Inventory reference is not set on the Pickup script.");
+            // Ensure that the inventory reference is set
+            if (inventory == null)
+            {
+                Debug.LogWarning("Inventory reference is not set on the Pickup script.");
+            }
         }
-    }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        // Check if the collider that entered the trigger is the player
-        if (other.gameObject.CompareTag("Player"))
+        private void OnCollisionEnter(Collision other)
         {
-            // Add the GameObject to the inventory
-            inventory.AddItem(gameObject);
+            // Check if the collider that entered the trigger is the player
+            if (other.gameObject.CompareTag("Player"))
+            {
+                // Add the GameObject to the inventory
+                inventory.AddItem(gameObject);
 
-            //TODO ADD INSTANTIATE ON PLAYER?
+                //TODO ADD INSTANTIATE ON PLAYER?
             
-            // Destroy the pickup GameObject
-            gameObject.SetActive(false);
+                // Destroy the pickup GameObject
+                gameObject.SetActive(false);
+            }
         }
     }
 }
