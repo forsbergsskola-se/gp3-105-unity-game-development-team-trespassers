@@ -7,7 +7,6 @@ public class WarningText : MonoBehaviour
 {
     public Text textElement;
     public HP lowHealth;
-    private int timer = 3;
     public void FixedUpdate()
     {
         
