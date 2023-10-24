@@ -25,8 +25,8 @@ public class Gunscript : MonoBehaviour
         var direction = pointAboveFloor - transform.position;
 
         // 4
-        var shootRay = new Ray(this.transform.position, direction);
-        Debug.DrawRay(shootRay.origin, shootRay.direction * 100.1f, Color.green, 2);
+        var shootRay = new Ray(transform.position, direction);
+        Debug.DrawRay(shootRay.origin, shootRay.direction * 100.1f, Color.blue, 2);
 
         // 5
         // Physics.IgnoreCollision(GetComponent<Collider>(), projectile.GetComponent<Collider>());

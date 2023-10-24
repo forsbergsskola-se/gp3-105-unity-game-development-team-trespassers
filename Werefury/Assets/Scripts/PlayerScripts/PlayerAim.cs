@@ -5,7 +5,6 @@ public class PlayerAim : MonoBehaviour
 {
 
     private Gunscript gunscript;
-    public bool mouseButtonDown = Input.GetMouseButtonDown(0);
     
     void Update()
     {
@@ -16,7 +15,7 @@ public class PlayerAim : MonoBehaviour
         transform.LookAt(target, Vector3.up);
         Debug.DrawRay(ray.origin, ray.direction * 100.1f, Color.green, 2);
         // 2
-        if(mouseButtonDown) {
+        if(Input.GetMouseButtonDown(0)) {
             gunscript.raycastOnMouseClick();  
         }
     }
