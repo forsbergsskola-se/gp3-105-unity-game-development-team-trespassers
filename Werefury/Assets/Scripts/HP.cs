@@ -1,9 +1,13 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
+using UnityEngine.UI;
 
 public class HP : MonoBehaviour
 {
     public int hp;
 
+    public WarningText warning;
     // Assuming you have an array of sprites or references to your sprite assets.
     [SerializeField] private Sprite[] spriteArray;
     [SerializeField] private bool TextureChange;
@@ -11,7 +15,6 @@ public class HP : MonoBehaviour
     private int full;
     private int half;
     private int quarter;
-
     private void Start()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,6 +28,7 @@ public class HP : MonoBehaviour
         hp -= damage;
         return hp;
         //No idea if this will work but i hope.
+        
     }
 
     public int HealDamage(int heal)
@@ -33,12 +37,10 @@ public class HP : MonoBehaviour
         return hp;
     }
 
-    private void Update()
+    void Update()
     {
         if (TextureChange == true)
         {
-
-
             if (hp >= full)
             {
                 spriteRenderer.sprite = spriteArray[0];
@@ -53,12 +55,14 @@ public class HP : MonoBehaviour
             }
         }
         else if (hp == 0)
-
+            
             if (hp <= 0)
             {
                 //Countdown
                 //Damage Player if still in the car
-                Destroy(this.gameObject);
+                Destroy(this.gameObject); 
             }
+
+        warning.FixedUpdate();
     }
 }
