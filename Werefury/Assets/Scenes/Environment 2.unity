@@ -497,6 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killCount: {fileID: 1933643303}
+  kills: 0
 --- !u!1001 &111752964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3037,6 +3038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7263bf447242fc246bc111db85fede51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!43 &1599976933
 Mesh:
   m_ObjectHideFlags: 0
