@@ -61,7 +61,6 @@ public class HP : MonoBehaviour
                 //Damage Player if still in the car
                 Destroy(this.gameObject); 
             }
-
-        warning.FixedUpdate();
+        
     }
 }

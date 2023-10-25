@@ -7,6 +7,7 @@ TagManager:
   - CameraPos
   - Building
   - Gun
+  - QuestGiver
   layers:
   - Default
   - TransparentFX

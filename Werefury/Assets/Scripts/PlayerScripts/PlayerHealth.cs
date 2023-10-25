@@ -1,3 +1,4 @@
+using System;
 using UI_Scripts;
 using UnityEngine;
 
@@ -27,5 +28,14 @@ namespace PlayerScripts
             healthBar.SetHealth(hp);
             return hp;
         }
+
+        private void Update()
+        {
+            if (hp <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        
     }
 }

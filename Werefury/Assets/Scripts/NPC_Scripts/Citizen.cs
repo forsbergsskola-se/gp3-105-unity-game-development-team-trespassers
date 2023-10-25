@@ -7,16 +7,26 @@ public class Citizen : MonoBehaviour
     [SerializeField] private float health;
     [SerializeField] private int minMoney =10;
     [SerializeField] private int maxMoney =50;
+    public KillCount killcount;
 
     public Currency currency;
     void Start()
     {
+        
         health = maxHealth;
     }
 
     public void Update()
     { 
-       
+        //ToDo remove this 
+        if (health <=0)
+        {
+            Debug.Log("A Citizen died");
+            CitizenMoney();
+            Destroy(gameObject);
+            killcount.AddKill();
+           
+        }
     }
 
     public void TakeDamage(float damageAmount)
@@ -27,6 +37,7 @@ public class Citizen : MonoBehaviour
             Debug.Log("A Citizen died");
             CitizenMoney();
             Destroy(gameObject);
+            killcount.AddKill();
         }
     }
     public void CitizenMoney()

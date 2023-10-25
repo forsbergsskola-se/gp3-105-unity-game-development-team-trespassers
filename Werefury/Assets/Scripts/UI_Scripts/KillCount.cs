@@ -19,6 +19,6 @@ public class KillCount : MonoBehaviour
     }
     public  void AddKill() //Call AddKill to killable objects.
     {
-        kills++;
+        this.kills++;
     }
 }
