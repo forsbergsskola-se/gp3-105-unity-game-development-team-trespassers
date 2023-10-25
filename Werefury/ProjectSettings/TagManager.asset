@@ -6,8 +6,10 @@ TagManager:
   tags:
   - CameraPos
   - Building
-  - Gun
   - QuestGiver
+  - Ak
+  - Pistol
+  - Gun
   layers:
   - Default
   - TransparentFX
