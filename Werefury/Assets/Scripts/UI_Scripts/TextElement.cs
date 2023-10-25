@@ -4,8 +4,7 @@ namespace UI_Scripts
 {
     public class TextElement
     {
-        void Start()
-        {
-        }
+        public Text weaponAmount;
+        
     }
 }
