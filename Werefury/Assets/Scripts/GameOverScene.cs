@@ -25,7 +25,7 @@ namespace DefaultNamespace
 
         public void CheckPoint()
         {
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
