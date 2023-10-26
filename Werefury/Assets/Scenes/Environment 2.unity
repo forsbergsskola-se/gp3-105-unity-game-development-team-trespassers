@@ -2888,6 +2888,7 @@ GameObject:
   - component: {fileID: 1496838951}
   - component: {fileID: 1496838952}
   - component: {fileID: 1496838953}
+  - component: {fileID: 1496838954}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3035,6 +3036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f660e2cbdb7948a99152bb25d2d1d185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunscript: {fileID: 1496838953}
 --- !u!114 &1496838953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3049,7 +3051,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 9
+--- !u!114 &1496838954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  warning: {fileID: 0}
+  spriteArray: []
+  TextureChange: 0
 --- !u!43 &1599976933
 Mesh:
   m_ObjectHideFlags: 0

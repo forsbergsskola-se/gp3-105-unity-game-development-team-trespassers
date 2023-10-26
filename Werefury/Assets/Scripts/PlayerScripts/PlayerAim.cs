@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerAim : MonoBehaviour
 {
 
-    private Gunscript gunscript;
+    [SerializeField] public Gunscript gunscript;
     
     void Update()
     {
