@@ -737,6 +737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
 --- !u!114 &165735481
@@ -832,7 +833,7 @@ GameObject:
   - component: {fileID: 191515457}
   - component: {fileID: 191515456}
   - component: {fileID: 191515455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
 --- !u!114 &447793220
@@ -1257,6 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weieldImage: {fileID: 0}
+  player: {fileID: 0}
+  weaponSprites: []
 --- !u!114 &465815876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,6 +1584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weieldImage: {fileID: 0}
+  player: {fileID: 0}
+  weaponSprites: []
 --- !u!114 &801623895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3014,6 +3022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   healthBar: {fileID: 517798566}
+  gameOver: {fileID: 0}
 --- !u!114 &1496838952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3472,6 +3481,7 @@ MonoBehaviour:
   health: 10
   minMoney: 10
   maxMoney: 50
+  killcount: {fileID: 0}
   currency: {fileID: 828101948}
 --- !u!1 &1757006266
 GameObject:
