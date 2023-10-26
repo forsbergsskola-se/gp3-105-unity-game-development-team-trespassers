@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,10 +7,16 @@ namespace DefaultNamespace
     
     public class GameOverScene : MonoBehaviour
     {
-        GameObject gameOver;
+        
+
+        private void Start()
+        {
+            this.gameObject.SetActive(false);
+        }
+
         public void GameOver()
         {
-            gameOver.SetActive(true);
+            this.gameObject.SetActive(true);
         }
         public void Quit()
         {

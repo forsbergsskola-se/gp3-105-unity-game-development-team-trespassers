@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using UI_Scripts;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ namespace PlayerScripts
     public class PlayerHealth : MonoBehaviour
     {
         public int hp;
-        public HealthBar healthBar; 
+        public HealthBar healthBar;
+        public GameOverScene gameOver;
 
         private void Start()
         {
@@ -34,6 +36,7 @@ namespace PlayerScripts
             if (hp <= 0)
             {
                 Destroy(this.gameObject);
+                gameOver.GameOver();
             }
         }
         

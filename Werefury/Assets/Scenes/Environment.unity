@@ -1154,7 +1154,6 @@ GameObject:
   - component: {fileID: 380260220}
   - component: {fileID: 380260219}
   - component: {fileID: 380260218}
-  - component: {fileID: 380260221}
   m_Layer: 5
   m_Name: ReturnToMenu
   m_TagString: Untagged
@@ -1226,7 +1225,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 380260221}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DefaultNamespace.GameOverScene, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -1276,18 +1275,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380260216}
   m_CullTransparentMesh: 1
---- !u!114 &380260221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380260216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d383e1212e410a8163176044adf980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &388566360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3381,6 +3368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   healthBar: {fileID: 517798566}
+  gameOver: {fileID: 1922889076}
 --- !u!114 &1496838952
 MonoBehaviour:
   m_ObjectHideFlags: 0
