@@ -3,24 +3,24 @@ using PlayerScripts;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI_Scripts
-{
+
     public class HealthBar : MonoBehaviour
     {
         public Image healthFill;
         [SerializeField] public Text healthText;
         public PlayerHealth playerHealth; // Reference for player health.
+        public HP Hp;
         private int _maxHealth;
         private int _currentHealth;
 
         private void Start()
         {
-            _maxHealth = playerHealth.hp; // Set maxHealth using hp from PlayerHealth
+            _maxHealth = Hp.hp; // Set maxHealth using hp from PlayerHealth
         }
 
         private void Update()
         {
-            _currentHealth = playerHealth.hp; // Update currentHealth using hp from PlayerHealth
+            _currentHealth = Hp.hp; // Update currentHealth using hp from PlayerHealth
             UpdateHealthText();
             UpdateHealthBar();
         }
@@ -58,4 +58,3 @@ namespace UI_Scripts
             _maxHealth = newMaxHealth;
         }
     }
-}

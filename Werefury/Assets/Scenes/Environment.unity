@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 191515457}
   - component: {fileID: 191515456}
   - component: {fileID: 191515455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,8 +1525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weieldImage: {fileID: 0}
-  player: {fileID: 0}
+  weieldImage: {fileID: 465815876}
+  player: {fileID: 1496838940}
   weaponSprites: []
 --- !u!114 &465815876
 MonoBehaviour:
@@ -1663,6 +1663,7 @@ MonoBehaviour:
   healthFill: {fileID: 517798564}
   healthText: {fileID: 1242621226}
   playerHealth: {fileID: 1496838951}
+  Hp: {fileID: 1496838954}
 --- !u!1 &563521934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,8 +1930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weieldImage: {fileID: 0}
-  player: {fileID: 0}
+  weieldImage: {fileID: 801623895}
+  player: {fileID: 1496838940}
   weaponSprites: []
 --- !u!114 &801623895
 MonoBehaviour:
@@ -3246,6 +3247,8 @@ GameObject:
   - component: {fileID: 1496838951}
   - component: {fileID: 1496838952}
   - component: {fileID: 1496838953}
+  - component: {fileID: 1496838954}
+  - component: {fileID: 1496838955}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3378,7 +3381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff51de71fd588f419d21dc41b879e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  Hp: {fileID: 1496838954}
   healthBar: {fileID: 517798566}
   gameOver: {fileID: 1922889076}
 --- !u!114 &1496838952
@@ -3393,6 +3396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f660e2cbdb7948a99152bb25d2d1d185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunscript: {fileID: 1496838953}
 --- !u!114 &1496838953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3407,7 +3411,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+--- !u!114 &1496838954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  warning: {fileID: 0}
+  spriteArray: []
+  TextureChange: 0
+--- !u!114 &1496838955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5e221072c9fcf42873fb570325a7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFill: {fileID: 517798564}
+  healthText: {fileID: 1242621226}
+  playerHealth: {fileID: 1496838951}
+  Hp: {fileID: 1496838954}
 --- !u!1 &1563813805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7430703587251194624, guid: 28ef50534e5725f46bc0395f235f1c2f, type: 3}
@@ -3426,6 +3462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1496838951}
+  Hp: {fileID: 0}
   damage: 50
 --- !u!43 &1599976933
 Mesh:
@@ -3854,6 +3891,7 @@ GameObject:
   - component: {fileID: 1710737089}
   - component: {fileID: 1710737092}
   - component: {fileID: 1710737093}
+  - component: {fileID: 1710737094}
   m_Layer: 0
   m_Name: Citizen
   m_TagString: Untagged
@@ -3994,6 +4032,22 @@ MonoBehaviour:
   maxMoney: 50
   killcount: {fileID: 0}
   currency: {fileID: 828101948}
+--- !u!114 &1710737094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710737087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  warning: {fileID: 0}
+  spriteArray: []
+  TextureChange: 0
 --- !u!1 &1757006266
 GameObject:
   m_ObjectHideFlags: 0

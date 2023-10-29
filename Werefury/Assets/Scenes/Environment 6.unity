@@ -296,6 +296,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponId: 2
+--- !u!114 &52839266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52839259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7263bf447242fc246bc111db85fede51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &69445869
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +994,7 @@ GameObject:
   - component: {fileID: 191515457}
   - component: {fileID: 191515456}
   - component: {fileID: 191515455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1345,6 +1360,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1415592320102066, guid: 55e187f4ea6f8f6409d32a77be7e0e75, type: 3}
       insertIndex: -1
       addedObject: {fileID: 52839264}
+    - targetCorrespondingSourceObject: {fileID: 1415592320102066, guid: 55e187f4ea6f8f6409d32a77be7e0e75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 52839266}
   m_SourcePrefab: {fileID: 100100000, guid: 55e187f4ea6f8f6409d32a77be7e0e75, type: 3}
 --- !u!1 &447793217 stripped
 GameObject:
@@ -1679,6 +1697,7 @@ MonoBehaviour:
   healthFill: {fileID: 517798564}
   healthText: {fileID: 1242621226}
   playerHealth: {fileID: 1496838951}
+  Hp: {fileID: 1496838954}
 --- !u!1 &563521934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,6 +3174,7 @@ GameObject:
   - component: {fileID: 1496838951}
   - component: {fileID: 1496838952}
   - component: {fileID: 1496838953}
+  - component: {fileID: 1496838954}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3287,7 +3307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff51de71fd588f419d21dc41b879e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  Hp: {fileID: 1496838954}
   healthBar: {fileID: 517798566}
   gameOver: {fileID: 0}
 --- !u!114 &1496838952
@@ -3302,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f660e2cbdb7948a99152bb25d2d1d185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunscript: {fileID: 0}
+  gunscript: {fileID: 1496838953}
 --- !u!114 &1496838953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3317,7 +3337,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+--- !u!114 &1496838954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  warning: {fileID: 0}
+  spriteArray: []
+  TextureChange: 0
 --- !u!1001 &1510058422
 PrefabInstance:
   m_ObjectHideFlags: 0

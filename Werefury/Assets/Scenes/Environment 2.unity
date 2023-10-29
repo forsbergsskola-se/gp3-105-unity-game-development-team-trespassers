@@ -1397,6 +1397,7 @@ MonoBehaviour:
   healthFill: {fileID: 517798564}
   healthText: {fileID: 1242621226}
   playerHealth: {fileID: 1496838951}
+  Hp: {fileID: 1496838954}
 --- !u!1 &563521934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,7 +3022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff51de71fd588f419d21dc41b879e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  Hp: {fileID: 1496838954}
   healthBar: {fileID: 517798566}
   gameOver: {fileID: 0}
 --- !u!114 &1496838952

@@ -3,37 +3,34 @@ using DefaultNamespace;
 using UI_Scripts;
 using UnityEngine;
 
-namespace PlayerScripts
-{
+
     public class PlayerHealth : MonoBehaviour
     {
-        public int hp;
+        public HP Hp;
         public HealthBar healthBar;
         public GameOverScene gameOver;
 
-        private void Start()
+        /*private void Start()
         {
-            hp = 100; 
-            healthBar.SetHealth(hp); 
-        }
+            healthBar.SetHealth(Hp.hp); 
+        }*/
 
-        public int TakeDamage(int damage)
+        public int OnTakeDamage()
         {
-            hp -= damage;
-            healthBar.SetHealth(hp); 
-            return hp;
+            healthBar.SetHealth(Hp.hp); 
+            return Hp.hp;
         }
 
         public int HealDamage(int heal)
         {
-            hp += heal;
-            healthBar.SetHealth(hp);
-            return hp;
+            Hp.hp += heal;
+            healthBar.SetHealth(Hp.hp);
+            return Hp.hp;
         }
 
         private void Update()
         {
-            if (hp <= 0)
+            if (Hp.hp <= 0)
             {
                 Destroy(this.gameObject);
                 gameOver.GameOver();
@@ -41,4 +38,3 @@ namespace PlayerScripts
         }
         
     }
-}
