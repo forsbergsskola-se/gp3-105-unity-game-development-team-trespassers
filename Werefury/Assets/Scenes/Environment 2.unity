@@ -1259,8 +1259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weieldImage: {fileID: 0}
-  player: {fileID: 0}
+  weieldImage: {fileID: 465815876}
+  player: {fileID: 1496838940}
   weaponSprites: []
 --- !u!114 &465815876
 MonoBehaviour:
@@ -1585,8 +1585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85a8c4783ae2d4c9fae63267492da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weieldImage: {fileID: 0}
-  player: {fileID: 0}
+  weieldImage: {fileID: 465815876}
+  player: {fileID: 1496838940}
   weaponSprites: []
 --- !u!114 &801623895
 MonoBehaviour:
@@ -3361,6 +3361,7 @@ GameObject:
   - component: {fileID: 1710737090}
   - component: {fileID: 1710737089}
   - component: {fileID: 1710737092}
+  - component: {fileID: 1710737094}
   - component: {fileID: 1710737093}
   m_Layer: 0
   m_Name: Citizen
@@ -3502,6 +3503,22 @@ MonoBehaviour:
   maxMoney: 50
   killcount: {fileID: 0}
   currency: {fileID: 828101948}
+--- !u!114 &1710737094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710737087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  warning: {fileID: 0}
+  spriteArray: []
+  TextureChange: 0
 --- !u!1 &1757006266
 GameObject:
   m_ObjectHideFlags: 0

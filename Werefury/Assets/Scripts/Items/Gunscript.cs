@@ -15,6 +15,7 @@ public class Gunscript : MonoBehaviour
 
         if (hit)
         {
+            Debug.Log("I'm hit");
             hit.TakeDamage(5);
         }
         
