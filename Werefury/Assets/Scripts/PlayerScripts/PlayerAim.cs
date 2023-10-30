@@ -13,7 +13,7 @@ public class PlayerAim : MonoBehaviour
         Vector3 target = hitInfo.point;
         target.y = transform.position.y;
         transform.LookAt(target, Vector3.up);
-        Debug.DrawRay(ray.origin, ray.direction * 100.1f, Color.green, 2);
+        // Debug.DrawRay(ray.origin, ray.direction * 100.1f, Color.green, 2);
         // 2
         if(Input.GetMouseButtonDown(0)) {
             gunscript.raycastOnMouseClick();  
