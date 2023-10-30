@@ -2477,6 +2477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200290597}
   - component: {fileID: 1200290596}
+  - component: {fileID: 1200290598}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -2561,6 +2562,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1686707310}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1200290598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200290595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a37a706d5e52c44681f338db15320c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1200290596}
+  secondsInFullDay: 120
 --- !u!4 &1201542101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
@@ -3113,6 +3128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunscript: {fileID: 1496838953}
+  item: {fileID: 0}
 --- !u!114 &1496838953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3233,6 +3249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weieldImage: {fileID: 465815876}
+  weieldImage2: {fileID: 0}
   player: {fileID: 1496838940}
   weaponSprites:
   - {fileID: 0}
