@@ -1583,6 +1583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarYellow
       objectReference: {fileID: 0}
+    - target: {fileID: 1223729509188410523, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Size.y
+      value: 0.78
+      objectReference: {fileID: 0}
     - target: {fileID: 2725153575093305199, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1593,7 +1597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.27
+      value: 7.709
       objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13243,7 +13247,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 16433815459355837, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.62
+      value: 30.98
       objectReference: {fileID: 0}
     - target: {fileID: 16433815459355837, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13291,7 +13295,7 @@ PrefabInstance:
       objectReference: {fileID: 1128678998}
     - target: {fileID: 1931938024394414437, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.66
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 3316975857144301922, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_Name
