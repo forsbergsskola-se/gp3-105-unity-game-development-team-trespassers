@@ -10,11 +10,11 @@ public class TimeCycle : MonoBehaviour {
 
     void Update() {
         float t = Mathf.Repeat(Time.time, secondsInFullDay) / secondsInFullDay; // Repeats time after a full cycle
-        float sunIntensity = Mathf.Clamp01(1 - Mathf.Abs(t * 2 - 1));
+        //float sunIntensity = Mathf.Clamp01(1 - Mathf.Abs(t * 2 - 1));
         float angle = Mathf.Lerp(0f, 360f, t);
 
         sun.color = lightColorGradient.Evaluate(t);
         sunTransform.rotation = Quaternion.Euler(angle, 0, 0);
-        sun.intensity = sunIntensity;
+       // sun.intensity = sunIntensity;
     }
 }
