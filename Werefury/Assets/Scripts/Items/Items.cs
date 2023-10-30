@@ -5,6 +5,8 @@ namespace Items
 {
     public class Items : MonoBehaviour
     {
+        [SerializeField] public Gunscript gunscript;
+        
         //This is on char
 
         [SerializeField] public GameObject HeldItem1;
@@ -21,6 +23,12 @@ namespace Items
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 SwitchWeapon();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                var weaponSpecific = HeldItem1.GetComponent<Weapon>();
+                gunscript.Reload(weaponSpecific.weaponId);
             }
 
             // Handle input to throw the held item

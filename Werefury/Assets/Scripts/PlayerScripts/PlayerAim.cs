@@ -6,7 +6,7 @@ public class PlayerAim : MonoBehaviour
 {
 
     [SerializeField] public Gunscript gunscript;
-    public Items item;
+    [SerializeField] public Items item;
     
     void Update()
     {
