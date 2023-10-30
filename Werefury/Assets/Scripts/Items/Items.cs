@@ -28,7 +28,7 @@ namespace Items
             if (Input.GetKeyDown(KeyCode.R))
             {
                 var weaponSpecific = HeldItem1.GetComponent<Weapon>();
-                gunscript.Reload(weaponSpecific.weaponId);
+                gunscript.Reload(weaponSpecific);
             }
 
             // Handle input to throw the held item

@@ -54,7 +54,7 @@ public class Gunscript : MonoBehaviour
         }
     }
 
-    public void Reload(string WeaponId)
+    public void Reload(Weapon WeaponSpecific)
     {
         triggerViable = false;
         while (Time.time > reloadTime)
