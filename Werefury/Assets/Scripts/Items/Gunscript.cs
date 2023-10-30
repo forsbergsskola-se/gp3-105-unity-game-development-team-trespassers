@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
+
 public class Gunscript : MonoBehaviour
 {
     // public Projectile projectilePrefab;
@@ -15,7 +16,6 @@ public class Gunscript : MonoBehaviour
 
         if (hit)
         {
-            Debug.Log("I'm hit");
             hit.TakeDamage(5);
         }
         

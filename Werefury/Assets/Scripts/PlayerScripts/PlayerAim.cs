@@ -1,10 +1,12 @@
 using UnityEngine;
 
-
+namespace Items
+{
 public class PlayerAim : MonoBehaviour
 {
 
     [SerializeField] public Gunscript gunscript;
+    public Items item;
     
     void Update()
     {
@@ -15,8 +17,9 @@ public class PlayerAim : MonoBehaviour
         transform.LookAt(target, Vector3.up);
         // Debug.DrawRay(ray.origin, ray.direction * 100.1f, Color.green, 2);
         // 2
-        if(Input.GetMouseButtonDown(0)) {
+        if(Input.GetMouseButtonDown(0) && item.HeldItem1 != null) {
             gunscript.raycastOnMouseClick();  
         }
     }
+}
 }
