@@ -72,11 +72,14 @@ public class HP : MonoBehaviour
         
        if (hp == 0)
         {
+            if (car != null)
+            {
             if (car._playerIsInCar == true)
             {
                 Debug.Log("car died");
                 carDeath = true;
                 playerHP.hp -= 25;
+            }
             }
             
             Debug.Log("GameObject destroyed");
