@@ -9000,7 +9000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1af81f2b95445a8f6d1ed3900509b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1496838940}
+  player: {fileID: 0}
   saveActivated: 0
 --- !u!65 &1529693230
 BoxCollider:
@@ -13354,6 +13354,10 @@ PrefabInstance:
       propertyPath: car
       value: 
       objectReference: {fileID: 1128678998}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: gunscript
+      value: 
+      objectReference: {fileID: 425897504114666208}
     - target: {fileID: 3316975857144301922, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_Name
       value: Player
@@ -13374,11 +13378,26 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 517798566}
+    - target: {fileID: 8611580634282577013, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 1496838950}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+--- !u!114 &425897504114666208 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6855553004808523380, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+  m_PrefabInstance: {fileID: 425897504114666207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7263bf447242fc246bc111db85fede51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2248893541652837531
 PrefabInstance:
   m_ObjectHideFlags: 0
