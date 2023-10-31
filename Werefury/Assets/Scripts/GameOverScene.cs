@@ -7,8 +7,8 @@ namespace DefaultNamespace
     
     public class GameOverScene : MonoBehaviour
     {
+        private SavePoint savePoint;
         
-
         private void Start()
         {
             this.gameObject.SetActive(false);
@@ -24,8 +24,8 @@ namespace DefaultNamespace
         }
 
         public void CheckPoint()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        { 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

@@ -32,7 +32,7 @@ using UnityEngine;
         {
             if (Hp.hp <= 0)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
                 gameOver.GameOver();
             }
         }

@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 7154312668832042901}
   - component: {fileID: 8611580634282577013}
   - component: {fileID: 6855553004808523380}
+  - component: {fileID: 5165729162836518197}
   - component: {fileID: 5965263571738417620}
   - component: {fileID: 4098465974206226064}
   m_Layer: 0
@@ -165,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008aece94d91e8342a99258af58a007d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunscript: {fileID: 0}
   HeldItem1: {fileID: 0}
   HeldItem2: {fileID: 0}
   YouCantdothat: {fileID: 0}
@@ -198,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunscript: {fileID: 6855553004808523380}
+  item: {fileID: 0}
 --- !u!114 &6855553004808523380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +215,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 1
+  triggerViable: 1
+  cooldown: 1.5
+--- !u!114 &5165729162836518197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3316975857144301922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19df6907935149deb742e5ae5f564b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5965263571738417620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 7055757434369942014}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.001, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
