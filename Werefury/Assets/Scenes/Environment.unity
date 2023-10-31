@@ -376,10 +376,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69167585}
-  - component: {fileID: 69167589}
   - component: {fileID: 69167588}
   - component: {fileID: 69167587}
   - component: {fileID: 69167586}
+  - component: {fileID: 69167589}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -499,7 +499,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69167584}
-  m_Mesh: {fileID: 2085735420}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &69445869
 GameObject:
   m_ObjectHideFlags: 0
