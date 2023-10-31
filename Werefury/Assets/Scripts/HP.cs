@@ -59,7 +59,7 @@ public class HP : MonoBehaviour
             {
                 //Countdown
                 //Damage Player if still in the car
-                Destroy(this.gameObject); 
+                //Destroy(this.gameObject); 
             }
         
     }

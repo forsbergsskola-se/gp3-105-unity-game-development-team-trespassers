@@ -10,6 +10,7 @@ TagManager:
   - Ak
   - Pistol
   - Gun
+  - SavePoint
   layers:
   - Default
   - TransparentFX
