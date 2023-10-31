@@ -9,6 +9,7 @@ namespace CarScripts
         private GameObject Player;
         private GameObject carUi;
         private bool playerNear = false;
+        [SerializeField] private HP Hp;
         [SerializeField] private SpriteRenderer spriteRenderer;
         private PlayerMovement playerMovement;
         private Collider playerCollider;
@@ -20,6 +21,13 @@ namespace CarScripts
         }
         private void Update()
         {
+            
+            if (Hp.carDeath == true)
+            {
+                Debug.Log("We try to leave");
+                ExitCar();
+            }
+            
             if (Input.GetKeyDown(KeyCode.E) && !_playerIsInCar && playerNear)
             {
                 EnterCar();
@@ -68,7 +76,7 @@ namespace CarScripts
 
         }
 
-        void ExitCar()
+        public void ExitCar()
         {
             gameObject.tag = "Untagged";
             Player.tag = "Player";

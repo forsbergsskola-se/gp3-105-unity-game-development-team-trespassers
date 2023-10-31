@@ -32,13 +32,11 @@ public class Quest : MonoBehaviour
         {
             QuestComplete = true;
             currency.currency += 250;
-            questGiver.HasQuest = false;
         }
     }
 
     private bool QuestCondition(int KillCount)
     {
-        //Todo Fix Replayable killCount basically moneyglitch atm.
        if (KillCount >= 4)
        { 
            return true;
