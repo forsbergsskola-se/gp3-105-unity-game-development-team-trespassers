@@ -17,7 +17,7 @@ public class PlayerAim : MonoBehaviour
         transform.LookAt(target, Vector3.up);
         // Debug.DrawRay(ray.origin, ray.direction * 100.1f, Color.green, 2);
         // 2
-        if(Input.GetMouseButtonDown(0) && item.HeldItem1 != null) {
+        if(Input.GetMouseButtonDown(0) && item.isEquipped && gunscript.triggerViable) {
             gunscript.raycastOnMouseClick();  
         }
     }

@@ -12,8 +12,8 @@ public class Gunscript : MonoBehaviour
     // public Projectile projectilePrefab;
     public LayerMask mask;
     public bool triggerViable = true;
-    [SerializeField]private float cooldown = 1.5f;
-    private float reloadTime = 0f;
+    [SerializeField]public float cooldown = 1.5f;
+    private float reloadTime;
 
     void shoot(GameObject hitSpecific)
     {
@@ -54,20 +54,21 @@ public class Gunscript : MonoBehaviour
         }
     }
 
-    public void Reload(Weapon WeaponSpecific)
+    public void Reload(Weapon weaponSpecific)
     {
         triggerViable = false;
-        while (Time.time > reloadTime)
-        {
-            reloadTime = Time.time + cooldown;
-        }
-        triggerViable = true;
+        reloadTime = Time.time + cooldown;
+        Debug.Log(reloadTime);
+        weaponSpecific.mag = weaponSpecific.magMax;
     }
 
     // Update is called once per frame
     // 2
     void Update () {
-
+        if (Time.time > reloadTime)
+        {
+            triggerViable = true;
+        }
     }
 }
 }

@@ -12,6 +12,8 @@ namespace Items
         [SerializeField] public GameObject HeldItem1;
         [SerializeField] public GameObject HeldItem2;
         [SerializeField] private GameObject YouCantdothat;
+        [SerializeField] public bool isEquipped = false;
+        
     
         // Add an item to the Hands
         [SerializeField] private GameObject YouCantDoThatPrefab;
@@ -45,6 +47,7 @@ namespace Items
             if (HeldItem1 == null)
             {
                 HeldItem1 = item;
+                isEquipped = true;
             }
             else if (HeldItem2 == null)
             {
@@ -76,10 +79,12 @@ namespace Items
             if(HeldItem1 != null && HeldItem1.CompareTag("Gun"))
             {
                 myScript.enabled = true;
+                isEquipped = true;
             }
             else if (HeldItem1 == null)
             {
                 myScript.enabled = false;
+                isEquipped = false;
             }
             
         }
