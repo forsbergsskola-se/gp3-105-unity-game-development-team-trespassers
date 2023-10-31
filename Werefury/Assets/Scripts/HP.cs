@@ -53,14 +53,12 @@ public class HP : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[2];
             }
         }
-        else if (hp == 0)
-            
-            if (hp <= 0)
-            {
-                //Countdown
-                //Damage Player if still in the car
-                //Destroy(this.gameObject); 
-            }
+        if (hp <= 0)
+        {
+            //Countdown
+            //Damage Player if still in the car
+            Destroy(gameObject); 
+        }
         
     }
 }

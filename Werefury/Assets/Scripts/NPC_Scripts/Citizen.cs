@@ -1,25 +1,27 @@
+using System;
 using UI_Scripts;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 //This Citizen should have some money to drop when killed.
 public class Citizen : MonoBehaviour
 {
-    [SerializeField] private float maxHealth = 10f;
-    [SerializeField] private float health;
+    public HP Hp;
     [SerializeField] private int minMoney =10;
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
+
 
     public Currency currency;
     void Start()
     {
         
-        health = maxHealth;
     }
 
-    public void Update()
+    /*public void Update()
     { 
         //ToDo remove this 
-        if (health <=0)
+        if (Hp.hp <= 0)
         {
             Debug.Log("A Citizen died");
             CitizenMoney();
@@ -27,19 +29,15 @@ public class Citizen : MonoBehaviour
             killcount.AddKill();
            
         }
-    }
+    }*/
 
-    public void TakeDamage(float damageAmount)
+    public void OnDestroy()
     {
-        health -= damageAmount;
-        if (health <=0)
-        {
-            Debug.Log("A Citizen died");
-            CitizenMoney();
-            Destroy(gameObject);
-            killcount.AddKill();
-        }
+        Debug.Log("A Citizen died");
+        CitizenMoney();
+        killcount.AddKill();
     }
+    
     public void CitizenMoney()
     {
         int moneyDrop = Random.Range(minMoney, maxMoney + 1);
