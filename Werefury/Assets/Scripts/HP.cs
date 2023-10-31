@@ -69,14 +69,6 @@ public class HP : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[2];
             }
         }
-<<<<<<< Updated upstream
-        if (hp <= 0)
-        {
-            //Countdown
-            //Damage Player if still in the car
-            Destroy(gameObject); 
-        }
-=======
         
        if (hp == 0)
         {
@@ -94,7 +86,6 @@ public class HP : MonoBehaviour
         }
             
      
->>>>>>> Stashed changes
         
     }
 }
