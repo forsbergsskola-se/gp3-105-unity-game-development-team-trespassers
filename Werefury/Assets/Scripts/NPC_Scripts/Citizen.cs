@@ -10,37 +10,23 @@ public class Citizen : MonoBehaviour
     [SerializeField] private int minMoney =10;
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
-
+    private QuestUI UpdateUI;
+    public Currency currency;
     public int GetHP()
     {
         return Hp.value;
     }
-
-
-    public Currency currency;
-    void Start()
-    {
-        
-    }
-
-    /*public void Update()
-    { 
-        //ToDo remove this 
-        if (Hp.hp <= 0)
-        {
-            Debug.Log("A Citizen died");
-            CitizenMoney();
-            Destroy(gameObject);
-            killcount.AddKill();
-           
-        }
-    }*/
-
+    
     public void OnDestroy()
     {
         Debug.Log("A Citizen died");
         CitizenMoney();
-        killcount.AddKill();
+        GetHP();
+        if (Hp.value<=0)
+        {
+            killcount.AddKill();
+            UpdateUI.AddQuestKill();
+        }
     }
     
     public void CitizenMoney()
@@ -49,5 +35,6 @@ public class Citizen : MonoBehaviour
         Debug.Log(moneyDrop + "$ Dropped");
         currency.currency += moneyDrop;
         currency.UpdateCurrency(); 
+        
     }
 }

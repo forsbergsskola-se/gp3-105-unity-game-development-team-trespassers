@@ -8,6 +8,7 @@ public class QuestGiver : MonoBehaviour
     public bool HasQuest = false;
     private bool inside;
     [SerializeField] private GameObject questUI;
+    private QuestUI EnableUI;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +27,8 @@ public class QuestGiver : MonoBehaviour
         if (HasQuest == true)
         {
             questUI.SetActive(true);
+            EnableUI.EnableQuestLog();
+
         }
         else
         {

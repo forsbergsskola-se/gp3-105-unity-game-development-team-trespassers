@@ -13,12 +13,12 @@ public class KillCount : MonoBehaviour
         UpdateKillCount();
     }
 
-    private void UpdateKillCount()
+    public void UpdateKillCount()
     {
-        killCount.text = kills.ToString();
+        killCount.text = $"{kills.ToString()}";
     }
     public  void AddKill() //Call AddKill to killable objects.
     {
-        this.kills++;
+        kills++;
     }
 }
