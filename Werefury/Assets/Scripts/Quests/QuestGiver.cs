@@ -5,12 +5,6 @@ public class QuestGiver : MonoBehaviour
     public bool HasQuest = false;
     private bool inside;
     [SerializeField] private GameObject questUI;
-    private QuestUI questUIComponent;
-
-    private void Start()
-    {
-        questUIComponent = questUI.GetComponent<QuestUI>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {

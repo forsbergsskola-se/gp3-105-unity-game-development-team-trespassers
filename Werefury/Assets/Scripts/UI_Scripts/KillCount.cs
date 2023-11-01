@@ -6,6 +6,7 @@ public class KillCount : MonoBehaviour
     public Text killCount;
     public int kills;
     public QuestUI questKill;
+    private QuestGiver gaveQuest;
 
     void Start()
     {
@@ -25,9 +26,6 @@ public class KillCount : MonoBehaviour
     public void AddKill()
     {
         kills++;
-        if (questKill.questGiver.HasQuest)  // Check if the quest is active
-        {
             questKill.AddQuestKill();
-        }
     }
 }

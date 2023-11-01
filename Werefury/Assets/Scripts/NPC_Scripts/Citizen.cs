@@ -11,6 +11,7 @@ public class Citizen : MonoBehaviour
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
     public Currency currency;
+    private QuestUI questKill;
     public int GetHP()
     {
         return Hp.value;
@@ -20,10 +21,10 @@ public class Citizen : MonoBehaviour
     {
         Debug.Log("A Citizen died");
         CitizenMoney();
-        GetHP();
         if (Hp.value<=0)
         {
             killcount.AddKill();
+            questKill.AddQuestKill();
         }
     }
     
