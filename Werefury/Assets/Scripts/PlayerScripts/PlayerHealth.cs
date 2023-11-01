@@ -9,6 +9,7 @@ using UnityEngine;
         public HP Hp;
         public HealthBar healthBar;
         public GameOverScene gameOver;
+        
 
         /*private void Start()
         {
@@ -32,9 +33,11 @@ using UnityEngine;
         {
             if (Hp.value <= 0)
             {
-                //Destroy(this.gameObject);
+                Destroy(this.gameObject);
                 gameOver.GameOver();
+                
             }
         }
-        
+
+       
     }

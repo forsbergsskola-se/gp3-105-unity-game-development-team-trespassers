@@ -13,10 +13,12 @@ namespace UI_Scripts
         {
             currency = PlayerPrefs.GetInt("$$$");
             UpdateCurrency();
+            
             // load currency
         }
         private void Update()
         {
+            
             UpdateCurrency();
         }
         public void UpdateCurrency()
