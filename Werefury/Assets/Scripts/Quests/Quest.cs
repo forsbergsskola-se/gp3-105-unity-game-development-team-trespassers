@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UI_Scripts;
 using UnityEngine;
 
@@ -29,7 +26,7 @@ public class Quest : MonoBehaviour
     {
        // Debug.Log(QuestCondition(killCount.kills));
 
-       if (questGiver.HasQuest == true && QuestCondition(killCount.kills) && once == 0) ;
+       if (questGiver.HasQuest == true && QuestCondition(killCount.kills) && once == 0)
         {
             QuestComplete = true;
             currency.currency += 250;
@@ -37,7 +34,7 @@ public class Quest : MonoBehaviour
         }
     }
 
-    private bool QuestCondition(int KillCount)
+    public bool QuestCondition(int KillCount)
     {
        if (KillCount >= 4)
        { 

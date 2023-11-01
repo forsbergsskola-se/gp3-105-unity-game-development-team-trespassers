@@ -984,7 +984,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestKills: {fileID: 343045639}
-  questKills: 1
+  questKills: 0
+  questGiver: {fileID: 1167996190}
 --- !u!1001 &88680021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,6 +1215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCount: {fileID: 1933643303}
   kills: 0
+  questKill: {fileID: 88336125}
 --- !u!1 &119235017
 GameObject:
   m_ObjectHideFlags: 0
@@ -11914,10 +11916,10 @@ PrefabInstance:
       addedObject: {fileID: 1167996182}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 572baa3f53b89eb429475e0a046dbb45, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1167996186}
+      addedObject: {fileID: 1167996191}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 572baa3f53b89eb429475e0a046dbb45, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1167996187}
+      addedObject: {fileID: 1167996190}
   m_SourcePrefab: {fileID: 100100000, guid: 572baa3f53b89eb429475e0a046dbb45, type: 3}
 --- !u!4 &1167996179 stripped
 Transform:
@@ -11972,7 +11974,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.578247, y: 3.67027, z: 2.8826091}
   m_Center: {x: 0.00000023841858, y: -0.00000041723266, z: 1.4413046}
---- !u!114 &1167996186
+--- !u!114 &1167996190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11985,8 +11987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasQuest: 0
-  questUI: {fileID: 88336121}
---- !u!114 &1167996187
+  questUI: {fileID: 343045637}
+--- !u!114 &1167996191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17203,7 +17205,7 @@ MonoBehaviour:
   Hp: {fileID: 1710737094}
   minMoney: 10
   maxMoney: 50
-  killcount: {fileID: 107634268}
+  killcount: {fileID: 0}
   currency: {fileID: 828101948}
 --- !u!114 &1710737094
 MonoBehaviour:
@@ -18698,7 +18700,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851243505}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

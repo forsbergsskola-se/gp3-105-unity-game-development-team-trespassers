@@ -1,12 +1,12 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestUI : MonoBehaviour
 {
     public Text QuestKills;
-    private QuestGiver GivenQuest;
     public int questKills;
+    public QuestGiver questGiver;
+    private KillCount killCounted;
 
     private void Start()
     {
@@ -15,30 +15,26 @@ public class QuestUI : MonoBehaviour
 
     private void Update()
     {
-        UpdateQuestKill();
-        AddQuestKill();
+        if (questGiver.HasQuest && questKills <=4)
+        {
+            UpdateQuestKill();
+            AddQuestKill();
+        }
     }
 
     public void UpdateQuestKill()
     {
-            QuestKills.text = $"Quest {questKills.ToString()}/4";
-            Debug.Log("questKills: " + questKills);
-            if (questKills>=4)
-            {
-                QuestKills.text = " ";
-            }
-        
+        QuestKills.text = $"Quest {questKills.ToString()}/4";
+        Debug.Log("questKills: " + questKills);
+
+        if (questKills >= 4)
+        {
+            QuestKills.text = " ";
+        }
     }
-    
-public void AddQuestKill()
+
+    public void AddQuestKill()
     {
-        if (questKills <=3)
-        {
-            questKills++;
-        }
-        else
-        {
-            return;
-        }
+        questKills++;
     }
 }

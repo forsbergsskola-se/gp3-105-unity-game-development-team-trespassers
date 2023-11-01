@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class KillCount : MonoBehaviour
 {
     public Text killCount;
     public int kills;
+    public QuestUI questKill;
+
     void Start()
     {
         kills = 0;
     }
+
     void Update()
     {
         UpdateKillCount();
@@ -17,8 +21,13 @@ public class KillCount : MonoBehaviour
     {
         killCount.text = $"{kills.ToString()}";
     }
-    public  void AddKill() //Call AddKill to killable objects.
+
+    public void AddKill()
     {
         kills++;
+        if (questKill.questGiver.HasQuest)  // Check if the quest is active
+        {
+            questKill.AddQuestKill();
+        }
     }
 }

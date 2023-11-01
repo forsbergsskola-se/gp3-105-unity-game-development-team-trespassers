@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
@@ -8,7 +5,12 @@ public class QuestGiver : MonoBehaviour
     public bool HasQuest = false;
     private bool inside;
     [SerializeField] private GameObject questUI;
-    private QuestUI EnableUI;
+    private QuestUI questUIComponent;
+
+    private void Start()
+    {
+        questUIComponent = questUI.GetComponent<QuestUI>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,7 +26,7 @@ public class QuestGiver : MonoBehaviour
 
     private void Update()
     {
-        if (HasQuest == true)
+        if (HasQuest)
         {
             questUI.SetActive(true);
         }
@@ -32,15 +34,14 @@ public class QuestGiver : MonoBehaviour
         {
             questUI.SetActive(false);
         }
-        
-        if (inside == true) 
-        { 
-            if (HasQuest == false && Input.GetKeyDown(KeyCode.K)) 
-            { 
+
+        if (inside == true)
+        {
+            if (HasQuest == false && Input.GetKeyDown(KeyCode.K))
+            {
                 HasQuest = true;
-            Debug.Log(HasQuest); 
-            } 
-        } 
+                Debug.Log(HasQuest);
+            }
+        }
     }
- 
 }

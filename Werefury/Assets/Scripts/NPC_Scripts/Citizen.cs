@@ -10,7 +10,6 @@ public class Citizen : MonoBehaviour
     [SerializeField] private int minMoney =10;
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
-    private QuestUI UpdateUI;
     public Currency currency;
     public int GetHP()
     {
