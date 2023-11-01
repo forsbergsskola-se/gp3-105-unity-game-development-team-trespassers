@@ -26,7 +26,7 @@ namespace CarScripts
             {
                 Debug.Log("This is damage");
                 currentSpeed = 0f;
-                hp.TakeDamage(10);
+                hp.TakeDamage(50);
             }
         }
 

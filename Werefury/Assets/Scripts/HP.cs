@@ -1,7 +1,9 @@
+using CarScripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using System.Collections;
 
 public class HP : MonoBehaviour
 {
@@ -11,12 +13,19 @@ public class HP : MonoBehaviour
     // Assuming you have an array of sprites or references to your sprite assets.
     [SerializeField] private Sprite[] spriteArray;
     [SerializeField] private bool TextureChange;
+    [SerializeField] private Car car;
+    [SerializeField] private HP playerHP;
+    public bool carDeath = false;
     private SpriteRenderer spriteRenderer;
     private int full;
     private int half;
     private int quarter;
     private void Start()
     {
+        if (car == null)
+        {
+            GetComponent<Car>();
+        }
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         full = value / 1;
         half = value / 2;
@@ -36,6 +45,13 @@ public class HP : MonoBehaviour
         value += heal;
         return value;
     }
+    
+    private IEnumerator CarDeath()
+    {
+        yield return new WaitForSeconds(0.1f); // Wait for 3 seconds
+
+        Destroy(this.gameObject);
+    }
 
     void Update()
     {
@@ -54,12 +70,26 @@ public class HP : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[2];
             }
         }
-        if (value <= 0)
+        
+       if (value == 0)
         {
-            //Countdown
-            //Damage Player if still in the car
-            Destroy(gameObject); 
+            if (car != null)
+            {
+            if (car._playerIsInCar == true)
+            {
+                Debug.Log("car died");
+                carDeath = true;
+                playerHP.value -= 25;
+            }
+            }
+            
+            Debug.Log("GameObject destroyed");
+            StartCoroutine("CarDeath");
+
+
         }
+            
+     
         
     }
 }

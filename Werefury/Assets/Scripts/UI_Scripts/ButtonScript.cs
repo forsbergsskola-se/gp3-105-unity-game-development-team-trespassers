@@ -5,6 +5,7 @@ public class ButtonScript : MonoBehaviour
 {
     public void LoadScene()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Environment");
     }
 
