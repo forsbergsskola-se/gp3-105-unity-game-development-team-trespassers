@@ -32,12 +32,13 @@ public class Quest : MonoBehaviour
         {
             QuestComplete = true;
             currency.currency += 250;
+            
         }
     }
 
     private bool QuestCondition(int KillCount)
     {
-       if (KillCount >= 4)
+       if (KillCount == 4)
        { 
            return true;
        }

@@ -25,7 +25,6 @@ public class Citizen : MonoBehaviour
         if (Hp.value<=0)
         {
             killcount.AddKill();
-            UpdateUI.AddQuestKill();
         }
     }
     

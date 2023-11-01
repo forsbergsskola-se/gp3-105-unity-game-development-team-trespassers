@@ -1,27 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestUI : MonoBehaviour
 {
     public Text QuestKills;
-    public Image questUI;
     private QuestGiver GivenQuest;
-    public int questKills =0;
-    void Start()
+    public int questKills;
+
+    private void Start()
     {
-        QuestKills.enabled = false;
+        questKills = 0;
     }
 
-    public void EnableQuestLog()
+    private void Update()
     {
-        QuestKills.enabled = true;
-        QuestKills.text =$"{questKills}/4";
+        UpdateQuestKill();
+        AddQuestKill();
     }
 
-    public void AddQuestKill()
+    public void UpdateQuestKill()
     {
-        QuestKills.text = $"{questKills++.ToString()}/4";
+            QuestKills.text = $"Quest {questKills.ToString()}/4";
+            Debug.Log("questKills: " + questKills);
+            if (questKills>=4)
+            {
+                QuestKills.text = " ";
+            }
+        
+    }
+    
+public void AddQuestKill()
+    {
+        if (questKills <=3)
+        {
+            questKills++;
+        }
+        else
+        {
+            return;
+        }
     }
 }
