@@ -1,4 +1,5 @@
 using System;
+using UI_Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ namespace DefaultNamespace
     
     public class GameOverScene : MonoBehaviour
     {
-        private SavePoint savePoint;
+        public Currency currency;
         
         private void Start()
         {
@@ -17,6 +18,10 @@ namespace DefaultNamespace
         public void GameOver()
         {
             this.gameObject.SetActive(true);
+            currency.currency /= 2; 
+            PlayerPrefs.SetInt("$$$",currency.currency);
+            
+            // save currency
         }
         public void Quit()
         {

@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ namespace Items
     {
         public Image weieldImage;
         public Image weieldImage2;
+        public TextMeshProUGUI ammoText1;
+        public TextMeshProUGUI ammoText2;
         public GameObject player;
 
         [SerializeField] private Sprite[] weaponSprites;
@@ -18,7 +21,6 @@ namespace Items
 
         private void Start()
         {
-            weieldImage = GetComponent<Image>();
             weieldImage.sprite = null;
             weieldImage2.sprite = null;
             Color weieldImageColor = weieldImage.color;
@@ -34,6 +36,8 @@ namespace Items
             GetComponents();
             ShowWeapon1();
             ShowWeapon2();
+            ShowAmmo1();
+            ShowAmmo2();
         }
 
         public void GetComponents()
@@ -122,6 +126,30 @@ namespace Items
                 weieldImage2.sprite = null;
                 weieldImageColor.a = 0f;
                 weieldImage2.color = weieldImageColor; 
+            }
+        }
+
+        private void ShowAmmo1()
+        {
+            if (weapon1 != null)
+            {
+                ammoText1.text = weapon1.mag.ToString();
+            }
+            else
+            {
+                ammoText1.text = "";
+            }
+        }
+
+        private void ShowAmmo2()
+        {
+            if (weapon2 != null)
+            {
+                ammoText2.text = weapon2.mag.ToString();
+            }
+            else
+            {
+                ammoText2.text = "";
             }
         }
     }

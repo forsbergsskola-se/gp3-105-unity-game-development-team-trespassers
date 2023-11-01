@@ -7189,7 +7189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyAmount: {fileID: 1621186883}
-  currency: 0
+  currency: 100
 --- !u!1001 &835046479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15222,7 +15222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '$$$: 0'
+  m_Text: '$$$: '
 --- !u!1 &1648733165 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
@@ -16218,7 +16218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5fd0d8d2cc5024e9532ac591a94961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  value: 10
   warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
@@ -18155,6 +18155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d383e1212e410a8163176044adf980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currency: {fileID: 828101948}
 --- !u!1 &1933513019
 GameObject:
   m_ObjectHideFlags: 0
