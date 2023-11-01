@@ -16,9 +16,10 @@ public class Citizen : MonoBehaviour
     {
         return Hp.value;
     }
-    
+
     public void OnDestroy()
     {
+        
         Debug.Log("A Citizen died");
         CitizenMoney();
         if (Hp.value<=0)
@@ -26,6 +27,7 @@ public class Citizen : MonoBehaviour
             killcount.AddKill();
             questKill.AddQuestKill();
         }
+        
     }
     
     public void CitizenMoney()
