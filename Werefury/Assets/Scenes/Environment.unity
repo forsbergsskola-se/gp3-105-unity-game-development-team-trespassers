@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Highest
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_LocalPosition.x
       value: -71.19
@@ -662,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Medium
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1075,6 +1083,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1164,6 +1176,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_Name
       value: Block_Building_Highest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_LocalScale.x
@@ -1485,6 +1501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Lowest
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.87
@@ -1549,6 +1569,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
       propertyPath: m_Name
       value: Block_Building_Lowest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1675,6 +1699,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_Name
       value: Block_Building_Medium (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -2012,6 +2040,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_Name
       value: Block_Building_Highest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2487,6 +2519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2622,6 +2658,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_Name
       value: Block_Building_Medium (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -3957,6 +3997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MrsLovetts
       objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -245.19998
@@ -4235,6 +4279,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4312,6 +4360,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_Name
       value: Block_Building_Low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
@@ -4449,6 +4501,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4921,6 +4977,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5341,6 +5401,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_Name
       value: Block_Building_Low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
@@ -5778,6 +5842,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6576,6 +6644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apartment_Building
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c389aecfed8ee3b44b618b4227ad9999, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6830,6 +6902,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7006,6 +7082,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 68fa4bf5c2d6a664e84b934f79a01aef, type: 3}
       propertyPath: m_Name
       value: Kiosk
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 68fa4bf5c2d6a664e84b934f79a01aef, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 68fa4bf5c2d6a664e84b934f79a01aef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7214,6 +7294,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_Name
       value: Block_Building_Low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
@@ -7869,6 +7953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.51
@@ -8138,6 +8226,10 @@ PrefabInstance:
     - target: {fileID: 184156, guid: 4d37e49a7ff11c64da046512cfdd7743, type: 3}
       propertyPath: m_Name
       value: Build01_pfefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 184156, guid: 4d37e49a7ff11c64da046512cfdd7743, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 429486, guid: 4d37e49a7ff11c64da046512cfdd7743, type: 3}
       propertyPath: m_LocalScale.x
@@ -9916,7 +10008,7 @@ GameObject:
   - component: {fileID: 1300479254}
   m_Layer: 0
   m_Name: Apartments
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9954,6 +10046,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_Name
       value: Block_Building_Low (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalScale.x
@@ -10682,6 +10778,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_Name
       value: Block_Building_Low
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12154,6 +12254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Medium (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13503,6 +13607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Building_Medium (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13583,6 +13691,10 @@ PrefabInstance:
     - target: {fileID: 100030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
       propertyPath: m_Name
       value: MrsLovetts (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13760,6 +13872,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_Name
       value: Block_Building_Highest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aad00dff82ebaf349be97c566a710705, type: 3}
       propertyPath: m_LocalScale.x
@@ -14465,6 +14581,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
       propertyPath: m_Name
       value: Block_Building_Lowest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
+      propertyPath: m_TagString
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 91596462f558f474aa6cffc6729e72b5, type: 3}
       propertyPath: m_LocalScale.x
@@ -15269,6 +15389,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15701,6 +15825,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15817,6 +15945,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5467950155828125085, guid: befa682ad44dc804a8955f7ac494bc18, type: 3}
       propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 5467950155828125085, guid: befa682ad44dc804a8955f7ac494bc18, type: 3}
+      propertyPath: m_TagString
       value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
