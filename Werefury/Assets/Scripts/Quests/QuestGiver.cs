@@ -27,22 +27,20 @@ public class QuestGiver : MonoBehaviour
         if (HasQuest == true)
         {
             questUI.SetActive(true);
-            EnableUI.EnableQuestLog();
-
         }
         else
         {
             questUI.SetActive(false);
         }
         
-     if (inside == true)
-     {
-        if (HasQuest == false && Input.GetKeyDown(KeyCode.K))
-        {
-            HasQuest = true;
-            Debug.Log(HasQuest);
-        }
-     } 
+        if (inside == true) 
+        { 
+            if (HasQuest == false && Input.GetKeyDown(KeyCode.K)) 
+            { 
+                HasQuest = true;
+            Debug.Log(HasQuest); 
+            } 
+        } 
     }
  
 }
