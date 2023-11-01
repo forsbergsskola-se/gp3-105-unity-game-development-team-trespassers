@@ -1,9 +1,12 @@
+using System;
+using UI_Scripts;
 using UnityEngine;
 
 namespace PlayerScripts
 {
     public class PlayerSpawn : MonoBehaviour
-    { 
+    {
+        private Currency _currency;
         void Start() // you do this, when you load the level again
         {
             Vector3 position = new Vector3();
@@ -19,6 +22,7 @@ namespace PlayerScripts
 
             GameObject player = GameObject.FindWithTag("Player");
             player.transform.position = position;
+            
 
         }
     }

@@ -14,7 +14,7 @@ namespace DefaultNamespace
             if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
             {
                 saveActivated = true;
-                //player.transform.position = spawnPoint.position;
+                
                 SavingStuff();
             }
             
