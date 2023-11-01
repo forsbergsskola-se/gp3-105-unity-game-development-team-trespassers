@@ -15,12 +15,12 @@ using UnityEngine.UI;
 
         private void Start()
         {
-            _maxHealth = Hp.hp; // Set maxHealth using hp from PlayerHealth
+            _maxHealth = Hp.value; // Set maxHealth using hp from PlayerHealth
         }
 
         private void Update()
         {
-            _currentHealth = Hp.hp; // Update currentHealth using hp from PlayerHealth
+            _currentHealth = Hp.value; // Update currentHealth using hp from PlayerHealth
             UpdateHealthText();
             UpdateHealthBar();
         }

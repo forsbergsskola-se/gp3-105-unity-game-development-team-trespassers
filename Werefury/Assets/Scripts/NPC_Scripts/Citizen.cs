@@ -11,6 +11,11 @@ public class Citizen : MonoBehaviour
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
 
+    public int GetHP()
+    {
+        return Hp.value;
+    }
+
 
     public Currency currency;
     void Start()

@@ -1,10 +1,11 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class HP : MonoBehaviour
 {
-    public int hp;
+    [FormerlySerializedAs("hp")] public int value;
 
     public WarningText warning;
     // Assuming you have an array of sprites or references to your sprite assets.
@@ -17,43 +18,43 @@ public class HP : MonoBehaviour
     private void Start()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-        full = hp / 1;
-        half = hp / 2;
-        quarter = hp / 4;
+        full = value / 1;
+        half = value / 2;
+        quarter = value / 4;
     }
 
     public int TakeDamage(int damage)
     {
-        hp -= damage;
-        return hp;
+        value -= damage;
+        return value;
         //No idea if this will work but i hope.
         
     }
 
     public int HealDamage(int heal)
     {
-        hp += heal;
-        return hp;
+        value += heal;
+        return value;
     }
 
     void Update()
     {
         if (TextureChange == true)
         {
-            if (hp >= full)
+            if (value >= full)
             {
                 spriteRenderer.sprite = spriteArray[0];
             }
-            else if (hp <= half)
+            else if (value <= half)
             {
                 spriteRenderer.sprite = spriteArray[1];
             }
-            else if (hp <= quarter)
+            else if (value <= quarter)
             {
                 spriteRenderer.sprite = spriteArray[2];
             }
         }
-        if (hp <= 0)
+        if (value <= 0)
         {
             //Countdown
             //Damage Player if still in the car

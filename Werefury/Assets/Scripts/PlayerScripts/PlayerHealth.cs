@@ -17,20 +17,20 @@ using UnityEngine;
 
         public int OnTakeDamage()
         {
-            healthBar.SetHealth(Hp.hp); 
-            return Hp.hp;
+            healthBar.SetHealth(Hp.value); 
+            return Hp.value;
         }
 
         public int HealDamage(int heal)
         {
-            Hp.hp += heal;
-            healthBar.SetHealth(Hp.hp);
-            return Hp.hp;
+            Hp.value += heal;
+            healthBar.SetHealth(Hp.value);
+            return Hp.value;
         }
 
         private void Update()
         {
-            if (Hp.hp <= 0)
+            if (Hp.value <= 0)
             {
                 //Destroy(this.gameObject);
                 gameOver.GameOver();

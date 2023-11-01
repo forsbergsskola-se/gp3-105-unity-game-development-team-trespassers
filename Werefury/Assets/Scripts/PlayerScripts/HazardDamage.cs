@@ -14,7 +14,7 @@ namespace PlayerScripts
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                Hp.hp-= damage;
+                Hp.value-= damage;
             }
         }
         
