@@ -18155,7 +18155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d383e1212e410a8163176044adf980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currency: {fileID: 0}
+  currency: {fileID: 828101948}
 --- !u!1 &1933513019
 GameObject:
   m_ObjectHideFlags: 0
