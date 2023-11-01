@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class QuestUI : MonoBehaviour
 {
     public Text QuestKills;
+    public Image questUI;
     private QuestGiver GivenQuest;
     public int questKills =0;
     void Start()
@@ -16,7 +17,7 @@ public class QuestUI : MonoBehaviour
     public void EnableQuestLog()
     {
         QuestKills.enabled = true;
-        QuestKills.text =$"{questKills.ToString()}/4";
+        QuestKills.text =$"{questKills}/4";
     }
 
     public void AddQuestKill()
