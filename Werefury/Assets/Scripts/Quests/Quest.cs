@@ -12,7 +12,7 @@ public class Quest : MonoBehaviour
     private QuestGiver questGiver;
     private KillCount killCount;
     private Currency currency;
-    private int once;
+    private int once = 0;
 
     private bool QuestComplete = false;
 
