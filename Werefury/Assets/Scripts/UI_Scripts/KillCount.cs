@@ -26,6 +26,11 @@ public class KillCount : MonoBehaviour
     public void AddKill()
     {
         kills++;
+
+        if (questKill.enabled)
+        {
             questKill.AddQuestKill();
+        }
+            
     }
 }

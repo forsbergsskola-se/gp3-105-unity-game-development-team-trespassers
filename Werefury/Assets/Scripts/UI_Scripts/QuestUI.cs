@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,26 +5,26 @@ public class QuestUI : MonoBehaviour
 {
     public Text QuestKills;
     public int questKills;
-    private bool increased;
-    private void Start()
+    private bool updateNeeded = false;
+
+    public void Start()
     {
-        questKills = 0;
+        questKills=0;
     }
 
     public void Update()
     {
-        if (increased)
+        if (updateNeeded)
         {
             UpdateQuestKill();
+            updateNeeded = false;
         }
-
-        increased = false;
     }
 
     public void UpdateQuestKill()
     {
         QuestKills.text = $"Quest {questKills.ToString()}/4";
-        Debug.Log("questKills: " + questKills);
+        //Debug.Log("questKills: " + questKills);
         if (questKills >= 4)
         {
             QuestKills.text = "Quest 4/4";
@@ -33,8 +32,8 @@ public class QuestUI : MonoBehaviour
     }
 
     public void AddQuestKill()
-    { 
+    {
         questKills++;
-        increased = true;
+        updateNeeded = true; 
     }
 }

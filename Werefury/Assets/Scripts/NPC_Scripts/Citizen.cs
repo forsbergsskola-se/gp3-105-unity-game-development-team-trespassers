@@ -3,7 +3,6 @@ using UI_Scripts;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-//This Citizen should have some money to drop when killed.
 public class Citizen : MonoBehaviour
 {
     public HP Hp;
@@ -11,7 +10,6 @@ public class Citizen : MonoBehaviour
     [SerializeField] private int maxMoney =50;
     public KillCount killcount;
     public Currency currency;
-    private QuestUI questKill;
     public int GetHP()
     {
         return Hp.value;
@@ -25,7 +23,6 @@ public class Citizen : MonoBehaviour
         if (Hp.value<=0)
         {
             killcount.AddKill();
-            questKill.AddQuestKill();
         }
         
     }
