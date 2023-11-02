@@ -20,6 +20,7 @@ public class HP : MonoBehaviour
     private int full;
     private int half;
     private int quarter;
+    public GameObject particlePrefab;
     private void Start()
     {
         if (car == null)
@@ -35,6 +36,18 @@ public class HP : MonoBehaviour
     public int TakeDamage(int damage)
     {
         value -= damage;
+
+        if (value <= 0)
+        {
+            if (particlePrefab != null)
+            {
+                Debug.Log("Spawn particle.");
+                GameObject particleInstance = Instantiate(particlePrefab, transform.position, particlePrefab.transform.rotation);
+                particleInstance.GetComponent<ParticleSystem>().Play();
+            }
+            // spawn particle
+        }
+        
         return value;
         //No idea if this will work but i hope.
         
