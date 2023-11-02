@@ -1,4 +1,5 @@
 using System;
+using CarScripts;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -6,7 +7,8 @@ using UnityEngine.UI;
 public class WarningText : MonoBehaviour
 {
     public Text textElement;
-    public HP lowHealth;
+    private HP lowHealth;
+    private Car isPlayerInCar;
     public void FixedUpdate()
     {
         

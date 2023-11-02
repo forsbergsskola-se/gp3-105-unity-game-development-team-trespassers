@@ -19,7 +19,7 @@ namespace CarScripts
             Player = GameObject.FindWithTag("Player");
             playerCollider = Player.GetComponentInChildren<Collider>();
         }
-        private void Update()
+        public void Update()
         {
             
             if (Hp.carDeath == true)
@@ -38,7 +38,7 @@ namespace CarScripts
             }
         }
 
-        private void FixedUpdate()
+        public void FixedUpdate()
         {
             if (_playerIsInCar)
             {
@@ -46,7 +46,7 @@ namespace CarScripts
             }
         }
 
-        private void OnCollisionEnter(Collision other)
+        public void OnCollisionEnter(Collision other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
@@ -55,7 +55,7 @@ namespace CarScripts
             }
         }
     
-        private void OnCollisionExit(Collision other)
+        public void OnCollisionExit(Collision other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
