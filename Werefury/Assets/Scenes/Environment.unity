@@ -1214,7 +1214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCount: {fileID: 1933643303}
   kills: 0
-  questKill: {fileID: 88336125}
+  hasGivenQuest: {fileID: 1167996190}
+  questKills: {fileID: 88336125}
 --- !u!1 &119235017
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,6 +11133,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Russian AssaultRifle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3714096494904409942, guid: 1c42dcb8a6868704fbd9786b3e9875d1, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714096494904409942, guid: 1c42dcb8a6868704fbd9786b3e9875d1, type: 3}
+      propertyPath: magMax
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5341098942872946561, guid: 1c42dcb8a6868704fbd9786b3e9875d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -14487,6 +14496,14 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1496838950}
+    - target: {fileID: 8552658156779394798, guid: 17df987e2d9132c4cb13ab30319bb0b2, type: 3}
+      propertyPath: damage
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552658156779394798, guid: 17df987e2d9132c4cb13ab30319bb0b2, type: 3}
+      propertyPath: magMax
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21995,6 +22012,26 @@ PrefabInstance:
       propertyPath: gunscript
       value: 
       objectReference: {fileID: 425897504114666208}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: PlayerSprite
+      value: 
+      objectReference: {fileID: 425897504114666209}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray.Array.data[0]
+      value: 
+      objectReference: {fileID: -1480409101, guid: 4c2cf95c08803cc48a6eca5db32fe6eb, type: 3}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray.Array.data[1]
+      value: 
+      objectReference: {fileID: -1776742871, guid: 3fae551bb1f2faa489cb29b64c504621, type: 3}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 453642163, guid: 9cb7f653e1cc69b498843dd2c91c9a93, type: 3}
     - target: {fileID: 3316975857144301922, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_Name
       value: Player
@@ -22039,6 +22076,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7263bf447242fc246bc111db85fede51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &425897504114666209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7055757434369942014, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+  m_PrefabInstance: {fileID: 425897504114666207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2248893541652837531
 PrefabInstance:
   m_ObjectHideFlags: 0

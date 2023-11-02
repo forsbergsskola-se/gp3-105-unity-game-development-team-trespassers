@@ -5,9 +5,8 @@ public class KillCount : MonoBehaviour
 {
     public Text killCount;
     public int kills;
-    public QuestUI questKill;
-    private QuestGiver gaveQuest;
-
+    [SerializeField] QuestGiver hasGivenQuest;
+    [SerializeField] QuestUI questKills;
     void Start()
     {
         kills = 0;
@@ -26,11 +25,9 @@ public class KillCount : MonoBehaviour
     public void AddKill()
     {
         kills++;
-
-        if (questKill.enabled)
+        if (hasGivenQuest.HasQuest==true)
         {
-            questKill.AddQuestKill();
+            questKills.AddQuestKill();
         }
-            
     }
 }

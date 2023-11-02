@@ -13,6 +13,8 @@ namespace Items
         [SerializeField] public GameObject HeldItem2;
         [SerializeField] private GameObject YouCantdothat;
         [SerializeField] public bool isEquipped = false;
+        [SerializeField] public GameObject PlayerSprite;
+        [SerializeField] private Sprite[] spriteArray;
         
     
         // Add an item to the Hands
@@ -73,13 +75,26 @@ namespace Items
         
         public void InstantiateWeapon()
         {
-            
             Gunscript myScript = GetComponent<Gunscript>();
+            SpriteRenderer playerSprite = PlayerSprite.GetComponent<SpriteRenderer>();
             //Adds the Gun script.
             if(HeldItem1 != null && HeldItem1.CompareTag("Gun"))
             {
                 myScript.enabled = true;
                 isEquipped = true;
+                var weaponSpecific = HeldItem1.GetComponent<Weapon>();
+                switch (weaponSpecific.weaponId)
+                {
+                    case "1":
+                        playerSprite.sprite = spriteArray[1];
+                        break;
+                    case "2":
+                        playerSprite.sprite = spriteArray[2];
+                        break;
+                    default:
+                        playerSprite.sprite = spriteArray[0];
+                        break;
+                }
             }
             else if (HeldItem1 == null)
             {

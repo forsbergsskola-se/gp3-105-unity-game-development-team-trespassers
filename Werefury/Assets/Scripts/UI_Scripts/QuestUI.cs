@@ -7,24 +7,24 @@ public class QuestUI : MonoBehaviour
     public int questKills;
     private bool updateNeeded = false;
 
-    public void Start()
+    private void Start()
     {
-        questKills=0;
+        questKills = 0;
     }
 
-    public void Update()
+    private void Update()
     {
         if (updateNeeded)
         {
             UpdateQuestKill();
-            updateNeeded = false;
+            updateNeeded = false;  // Reset the flag
         }
     }
 
     public void UpdateQuestKill()
     {
         QuestKills.text = $"Quest {questKills.ToString()}/4";
-        //Debug.Log("questKills: " + questKills);
+        Debug.Log("questKills: " + questKills);
         if (questKills >= 4)
         {
             QuestKills.text = "Quest 4/4";
@@ -34,6 +34,6 @@ public class QuestUI : MonoBehaviour
     public void AddQuestKill()
     {
         questKills++;
-        updateNeeded = true; 
+        updateNeeded = true;  // Set the flag to indicate an update is needed
     }
 }
