@@ -6,19 +6,19 @@ public class QuestGiver : MonoBehaviour
     private bool inside;
     [SerializeField] private GameObject questUI;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         Debug.Log("inside");
         inside = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         Debug.Log("outside");
         inside = false;
     }
 
-    private void Update()
+    public void Update()
     {
         if (HasQuest)
         {

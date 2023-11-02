@@ -1214,7 +1214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCount: {fileID: 1933643303}
   kills: 0
-  questKill: {fileID: 88336125}
+  hasGivenQuest: {fileID: 1167996190}
+  questKills: {fileID: 88336125}
 --- !u!1 &119235017
 GameObject:
   m_ObjectHideFlags: 0
