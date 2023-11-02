@@ -25,6 +25,7 @@ public class Citizen : MonoBehaviour
             killcount.AddKill();
         }
         
+        
     }
     
     public void CitizenMoney()

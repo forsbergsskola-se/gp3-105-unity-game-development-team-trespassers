@@ -1214,7 +1214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCount: {fileID: 1933643303}
   kills: 0
-  questKill: {fileID: 88336125}
+  hasGivenQuest: {fileID: 1167996190}
+  questKills: {fileID: 88336125}
 --- !u!1 &119235017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2363,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2348362748469623844, guid: b9887fdaa7881a04a951d36819380e57, type: 3}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.75
@@ -4692,6 +4697,10 @@ PrefabInstance:
     - target: {fileID: 482054651610590433, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_Name
       value: CarBlack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22252,6 +22261,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6138839977384952334, guid: b9887fdaa7881a04a951d36819380e57, type: 3}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.21

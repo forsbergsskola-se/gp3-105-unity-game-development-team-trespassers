@@ -27,11 +27,11 @@ public class Quest : MonoBehaviour
        // Debug.Log(QuestCondition(killCount.kills));
 
        if (questGiver.HasQuest == true && QuestCondition(killCount.kills) && once == 0)
-        {
+       {
             QuestComplete = true;
             currency.currency += 250;
             once++;
-        }
+       }
     }
 
     public bool QuestCondition(int KillCount)
