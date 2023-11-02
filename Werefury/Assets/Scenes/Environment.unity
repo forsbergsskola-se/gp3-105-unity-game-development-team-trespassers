@@ -22141,8 +22141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weieldImage: {fileID: 2084532003}
   weieldImage2: {fileID: 1416938479}
-  ammoText1: {fileID: 0}
-  ammoText2: {fileID: 0}
+  ammoText1: {fileID: 1682432062}
+  ammoText2: {fileID: 2133787937}
   player: {fileID: 1496838940}
   weaponSprites:
   - {fileID: 21300000, guid: a662428842e49914ea7b2f7bc83e26d5, type: 3}
