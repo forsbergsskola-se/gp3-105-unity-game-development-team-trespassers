@@ -11,26 +11,26 @@ using UnityEngine.UI;
         public PlayerHealth playerHealth; // Reference for player health.
         public HP Hp;
         private int _maxHealth;
-        private int _currentHealth;
+        public float _currentHealth;
 
-        private void Start()
+        public void Start()
         {
             _maxHealth = Hp.value; // Set maxHealth using hp from PlayerHealth
         }
 
-        private void Update()
+        public void Update()
         {
             _currentHealth = Hp.value; // Update currentHealth using hp from PlayerHealth
             UpdateHealthText();
             UpdateHealthBar();
         }
 
-        private void UpdateHealthText()
+        public void UpdateHealthText()
         {
           healthText.text = _currentHealth.ToString(); // Update the health text
         }
 
-        private void UpdateHealthBar()
+        public void UpdateHealthBar()
         {
             float fillAmount = (float)_currentHealth / _maxHealth;
             healthFill.fillAmount = fillAmount;

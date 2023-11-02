@@ -1,23 +1,24 @@
-using System;
-using CarScripts;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 public class WarningText : MonoBehaviour
 {
     public Text textElement;
-    public HP lowHealth;
-    public void FixedUpdate()
+    [SerializeField] HealthBar healthBarTracker;
+
+    private void Start()
     {
-        
-        if (lowHealth.value <=50)
+        textElement.enabled = false;
+    }
+
+    private void Update()
+    {
+        if (healthBarTracker._currentHealth <= 0.5)
         {
-            Debug.Log("Warning: Low Health!");
-            textElement.enabled = true;
+            textElement.enabled = true; 
             textElement.text = "Warning: Low Health!";
         }
-        if (lowHealth.value <=0)
+        else
         {
             textElement.enabled = false;
         }

@@ -82,8 +82,7 @@ public class HP : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[2];
             }
         }
-        
-       if (value == 0)
+        if (value == 0)
         {
             if (car != null)
             {
