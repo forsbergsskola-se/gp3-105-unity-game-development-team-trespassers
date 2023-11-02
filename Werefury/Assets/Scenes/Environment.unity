@@ -17267,7 +17267,7 @@ GameObject:
   - component: {fileID: 1710737093}
   - component: {fileID: 1710737094}
   - component: {fileID: 1710737095}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Citizen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
