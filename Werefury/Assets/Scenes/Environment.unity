@@ -1283,7 +1283,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
   car: {fileID: 0}
@@ -2522,6 +2521,10 @@ PrefabInstance:
       propertyPath: car
       value: 
       objectReference: {fileID: 1515642828}
+    - target: {fileID: 30695987795349716, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: warning
+      value: 
+      objectReference: {fileID: 1092303988}
     - target: {fileID: 30695987795349716, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: playerHP
       value: 
@@ -4879,6 +4882,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2017565900}
     - target: {fileID: 30695987795349716, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: warning
+      value: 
+      objectReference: {fileID: 1092303988}
+    - target: {fileID: 30695987795349716, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: playerHP
       value: 
       objectReference: {fileID: 1496838954}
@@ -5205,6 +5212,10 @@ PrefabInstance:
     - target: {fileID: 400030, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3469564166618156988, guid: 57e92966cdc1a0a4da31a3871e15739a, type: 3}
+      propertyPath: m_Mass
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7548,7 +7559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &801623893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11171,6 +11182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textElement: {fileID: 923197534}
+  lowHealth: {fileID: 1128678999}
 --- !u!222 &1092303989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16118,7 +16130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
   car: {fileID: 0}
@@ -17650,7 +17661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
   car: {fileID: 0}
@@ -17942,7 +17952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  warning: {fileID: 0}
   spriteArray: []
   TextureChange: 0
   car: {fileID: 0}
@@ -19094,6 +19103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textElement: {fileID: 595914877}
+  lowHealth: {fileID: 0}
 --- !u!114 &1833830202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22592,6 +22602,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1242621226}
+    - target: {fileID: 5965263571738417620, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: warning
+      value: 
+      objectReference: {fileID: 1092303988}
     - target: {fileID: 7154312668832042901, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: gameOver
       value: 
