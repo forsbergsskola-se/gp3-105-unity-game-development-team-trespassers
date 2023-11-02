@@ -7,23 +7,17 @@ using UnityEngine.UI;
 public class WarningText : MonoBehaviour
 {
     public Text textElement;
-    private HP lowHealth;
-    private Car isPlayerInCar;
+    public HP lowHealth;
     public void FixedUpdate()
     {
         
-        if (lowHealth.value <=25)
+        if (lowHealth.value <=50)
         {
             Debug.Log("Warning: Low Health!");
             textElement.enabled = true;
             textElement.text = "Warning: Low Health!";
         }
-        if (lowHealth.value <=15)
-        {
-            Debug.Log("Leave the car!");
-            textElement.text ="Leave the car!";
-        }
-        if (lowHealth.value <=10)
+        if (lowHealth.value <=0)
         {
             textElement.enabled = false;
         }

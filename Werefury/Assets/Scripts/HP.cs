@@ -9,7 +9,6 @@ public class HP : MonoBehaviour
 {
     [FormerlySerializedAs("hp")] public int value;
 
-    public WarningText warning;
     // Assuming you have an array of sprites or references to your sprite assets.
     [SerializeField] private Sprite[] spriteArray;
     [SerializeField] private bool TextureChange;
