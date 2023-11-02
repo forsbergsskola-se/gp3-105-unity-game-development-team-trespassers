@@ -23,7 +23,11 @@ namespace UI_Scripts
         }
         public void UpdateCurrency()
         {
-            currencyAmount.text = "$$$: " +currency;
+            if (currencyAmount != null)
+            {
+                currencyAmount.text = "$$$: " +currency;
+            }
+            
             
         }
         
