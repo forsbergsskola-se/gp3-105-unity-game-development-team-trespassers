@@ -17,7 +17,7 @@ public class QuestUI : MonoBehaviour
         if (updateNeeded)
         {
             UpdateQuestKill();
-            updateNeeded = false;  // Reset the flag
+            updateNeeded = false; 
         }
     }
 
@@ -34,6 +34,6 @@ public class QuestUI : MonoBehaviour
     public void AddQuestKill()
     {
         questKills++;
-        updateNeeded = true;  // Set the flag to indicate an update is needed
+        updateNeeded = true; 
     }
 }
