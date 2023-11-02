@@ -22053,6 +22053,10 @@ PrefabInstance:
       propertyPath: cameraObject
       value: 
       objectReference: {fileID: 69445869}
+    - target: {fileID: 106682799517613168, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1480409101, guid: 4c2cf95c08803cc48a6eca5db32fe6eb, type: 3}
     - target: {fileID: 399610111806644566, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: car
       value: 
