@@ -1844,7 +1844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a8d2214884fd5534e9ef9049b060c195, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a96e99ff0f74374d875b0fd7d828c44, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1994,7 +1994,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here we introduce the games to our player and tell about the quest.
+  m_text: "Find the \"Quest\" sign and accept it. Kill the citizens to get rewards.\n\nWatch
+    out for danger signs and avoid them, or risk your health.\n\nDrive carefully
+    because cars are not made of adamantium.\n\n\t\tEnjoy the adventure!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
