@@ -2363,6 +2363,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2348362748469623844, guid: b9887fdaa7881a04a951d36819380e57, type: 3}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.75
@@ -4693,6 +4697,10 @@ PrefabInstance:
     - target: {fileID: 482054651610590433, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_Name
       value: CarBlack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22054,6 +22062,10 @@ PrefabInstance:
       propertyPath: cameraObject
       value: 
       objectReference: {fileID: 69445869}
+    - target: {fileID: 106682799517613168, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1480409101, guid: 4c2cf95c08803cc48a6eca5db32fe6eb, type: 3}
     - target: {fileID: 399610111806644566, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: car
       value: 
@@ -22208,6 +22220,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6138839977384952334, guid: b9887fdaa7881a04a951d36819380e57, type: 3}
+    - target: {fileID: 6970894568010251621, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7708986804327175758, guid: 1ffbc6e19a32c764c8350dc3c612f786, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.21
