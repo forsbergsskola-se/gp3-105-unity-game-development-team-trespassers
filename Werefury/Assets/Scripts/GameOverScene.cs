@@ -12,13 +12,14 @@ namespace DefaultNamespace
         public Currency currency;
         
         private void Start()
-        {   //problem with buttons caused here.
+        {   
             this.gameObject.SetActive(false);
         }
 
         public void GameOver()
         {
-            this.gameObject.SetActive(true);
+            gameObject.SetActive(true);
+            this.
             currency.currency /= 2; 
             PlayerPrefs.SetInt("$$$",currency.currency);
             
