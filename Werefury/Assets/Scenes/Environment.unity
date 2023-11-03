@@ -22904,6 +22904,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 425897504114666208}
     - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: dayOrNight
+      value: 
+      objectReference: {fileID: 1200290598}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: isEquipped
       value: 0
       objectReference: {fileID: 0}
@@ -22913,6 +22917,10 @@ PrefabInstance:
       objectReference: {fileID: 425897504114666209}
     - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: spriteArray.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray2.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
@@ -22927,6 +22935,18 @@ PrefabInstance:
       propertyPath: spriteArray.Array.data[2]
       value: 
       objectReference: {fileID: 453642163, guid: 9cb7f653e1cc69b498843dd2c91c9a93, type: 3}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray2.Array.data[0]
+      value: 
+      objectReference: {fileID: -1784978969, guid: 5a3c3dcd0264a9b4391867f33b1b4718, type: 3}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray2.Array.data[1]
+      value: 
+      objectReference: {fileID: -1184323826, guid: 5a3c3dcd0264a9b4391867f33b1b4718, type: 3}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: spriteArray2.Array.data[2]
+      value: 
+      objectReference: {fileID: -1806159404, guid: 5a3c3dcd0264a9b4391867f33b1b4718, type: 3}
     - target: {fileID: 1931938024394414437, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.5
