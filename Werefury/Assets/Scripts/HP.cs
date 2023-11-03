@@ -16,9 +16,9 @@ public class HP : MonoBehaviour
     [SerializeField] private HP playerHP;
     public bool carDeath = false;
     private SpriteRenderer spriteRenderer;
-    private int full;
-    private int half;
-    private int quarter;
+    public int full;
+    public int half;
+    public int quarter;
     public GameObject particlePrefab;
     private void Start()
     {

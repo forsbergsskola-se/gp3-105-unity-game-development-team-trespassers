@@ -8,26 +8,26 @@ using UnityEngine.UI;
     {
         public Image healthFill;
         [SerializeField] public Text healthText;
-        public PlayerHealth playerHealth; // Reference for player health.
+        public PlayerHealth playerHealth; 
         public HP Hp;
         private int _maxHealth;
         public float _currentHealth;
 
         public void Start()
         {
-            _maxHealth = Hp.value; // Set maxHealth using hp from PlayerHealth
+            _maxHealth = Hp.value; 
         }
 
         public void Update()
         {
-            _currentHealth = Hp.value; // Update currentHealth using hp from PlayerHealth
+            _currentHealth = Hp.value; 
             UpdateHealthText();
             UpdateHealthBar();
         }
 
         public void UpdateHealthText()
         {
-          healthText.text = _currentHealth.ToString(); // Update the health text
+          healthText.text = _currentHealth.ToString(); 
         }
 
         public void UpdateHealthBar()

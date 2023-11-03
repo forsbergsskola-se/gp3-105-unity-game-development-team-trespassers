@@ -4,7 +4,8 @@ using UnityEngine.UI;
 public class WarningText : MonoBehaviour
 {
     public Text textElement;
-    [SerializeField] HealthBar healthBarTracker;
+    public HP healthBarTracker;
+    
 
     private void Start()
     {
@@ -13,14 +14,10 @@ public class WarningText : MonoBehaviour
 
     private void Update()
     {
-        if (healthBarTracker._currentHealth <= 0.5)
+        if (healthBarTracker.value <=50)
         {
             textElement.enabled = true; 
             textElement.text = "Warning: Low Health!";
-        }
-        else
-        {
-            textElement.enabled = false;
         }
     }
 }
