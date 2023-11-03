@@ -6,6 +6,7 @@ namespace Items
     public class Items : MonoBehaviour
     {
         [SerializeField] public Gunscript gunscript;
+        [SerializeField] public TimeCycle dayOrNight;
         
         //This is on char
 
@@ -15,7 +16,7 @@ namespace Items
         [SerializeField] public bool isEquipped = false;
         [SerializeField] public GameObject PlayerSprite;
         [SerializeField] private Sprite[] spriteArray;
-        
+        [SerializeField] private Sprite[] spriteArray2;
     
         // Add an item to the Hands
         [SerializeField] private GameObject YouCantDoThatPrefab;
@@ -88,17 +89,35 @@ namespace Items
                 myScript.enabled = true;
                 isEquipped = true;
                 var weaponSpecific = HeldItem1.GetComponent<Weapon>();
-                switch (weaponSpecific.weaponId)
+                if (dayOrNight.day)
                 {
-                    case "1":
-                        playerSprite.sprite = spriteArray[1];
-                        break;
-                    case "2":
-                        playerSprite.sprite = spriteArray[2];
-                        break;
-                    default:
-                        playerSprite.sprite = spriteArray[0];
-                        break;
+                    switch (weaponSpecific.weaponId)
+                    {
+                        case "1":
+                            playerSprite.sprite = spriteArray[1];
+                            break;
+                        case "2":
+                            playerSprite.sprite = spriteArray[2];
+                            break;
+                        default:
+                            playerSprite.sprite = spriteArray[0];
+                            break;
+                    }
+                }
+                else
+                {
+                    switch (weaponSpecific.weaponId)
+                    {
+                        case "1":
+                            playerSprite.sprite = spriteArray2[1];
+                            break;
+                        case "2":
+                            playerSprite.sprite = spriteArray2[2];
+                            break;
+                        default:
+                            playerSprite.sprite = spriteArray2[0];
+                            break;
+                    }
                 }
             }
             else if (HeldItem1 == null)

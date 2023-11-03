@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fae551bb1f2faa489cb29b64c504621
+guid: 5a3c3dcd0264a9b4391867f33b1b4718
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,12 +110,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC-5.png_0
+      name: PCW-6.png_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 84
-        width: 20
+        x: 16
+        y: 85
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb61baa81d19ff49ab53560ae834dd4
+      internalID: -1184323826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PCW-6.png_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 85
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc13b620d0c57d24fb77496264979d26
+      internalID: -1784978969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PCW-6.png_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 85
+        width: 25
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,29 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3eaa27ef872fb438f3c60e92c85145
-      internalID: -1776742871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PC-5.png_1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 48
-        width: 29
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40bcf3dfd098ef14399da5bcd6a9a904
-      internalID: 798927891
+      spriteID: f23827cf3ca2df94e96a58c92f5dbfd4
+      internalID: -1806159404
       vertices: []
       indices: 
       edges: []
@@ -154,7 +175,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8fc809dfe00ba294a9f5e87e62e354fa
+    spriteID: f7fd51122201ac044b5e643cd79fffac
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC-5.png_0: -1776742871
-      PC-5.png_1: 798927891
+      PCW-6.png_0: -1184323826
+      PCW-6.png_1: -1784978969
+      PCW-6.png_2: -1806159404
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
