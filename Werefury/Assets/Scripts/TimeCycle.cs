@@ -7,6 +7,7 @@ public class TimeCycle : MonoBehaviour {
     public Transform sunTransform;
     public Gradient lightColorGradient;
     public float secondsInFullDay = 120f;
+    public bool day;
 
     void Update() {
         float t = Mathf.Repeat(Time.time, secondsInFullDay) / secondsInFullDay; // Repeats time after a full cycle
@@ -15,6 +16,15 @@ public class TimeCycle : MonoBehaviour {
 
         sun.color = lightColorGradient.Evaluate(t);
         sunTransform.rotation = Quaternion.Euler(angle, 0, 0);
+        if (t > 0.065f && 0.5f > t)
+        {
+            day = true;
+        }
+        else
+        {
+            day = false;
+        }
+        Debug.Log(t);
        // sun.intensity = sunIntensity;
     }
 }

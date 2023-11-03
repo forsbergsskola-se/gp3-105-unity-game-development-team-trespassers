@@ -1288,6 +1288,9 @@ MonoBehaviour:
   car: {fileID: 0}
   playerHP: {fileID: 0}
   carDeath: 0
+  full: 0
+  half: 0
+  quarter: 0
   particlePrefab: {fileID: 3690160118126398737, guid: 95ead76ef05530b43837624124209e61, type: 3}
 --- !u!114 &113211961
 MonoBehaviour:
@@ -11345,7 +11348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textElement: {fileID: 923197534}
-  healthBarTracker: {fileID: 517798566}
+  healthBarTracker: {fileID: 0}
 --- !u!222 &1092303989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12783,6 +12786,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200290597}
   - component: {fileID: 1200290596}
+  - component: {fileID: 1200290598}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -12867,6 +12871,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1686707310}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1200290598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200290595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a37a706d5e52c44681f338db15320c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 1200290596}
+  sunTransform: {fileID: 1200290597}
+  lightColorGradient:
+    serializedVersion: 2
+    key0: {r: 0.31716993, g: 0.31461376, b: 0.6603774, a: 1}
+    key1: {r: 0.8962264, g: 0.6537463, b: 0.46925062, a: 1}
+    key2: {r: 0.96470594, g: 0.8705883, b: 0.5803922, a: 0}
+    key3: {r: 0.9803922, g: 0.9607844, b: 0.8352942, a: 0}
+    key4: {r: 0.9811321, g: 0.96550596, b: 0.8469206, a: 0}
+    key5: {r: 0.9245283, g: 0.61001015, b: 0.34451762, a: 0}
+    key6: {r: 0.32156864, g: 0.31764707, b: 0.69803923, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 1157
+    ctime1: 5397
+    ctime2: 10987
+    ctime3: 22166
+    ctime4: 26600
+    ctime5: 40092
+    ctime6: 52621
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 2
+    m_ColorSpace: -1
+    m_NumColorKeys: 7
+    m_NumAlphaKeys: 2
+  secondsInFullDay: 120
+  day: 0
 --- !u!4 &1201542101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}
@@ -16298,6 +16348,9 @@ MonoBehaviour:
   car: {fileID: 0}
   playerHP: {fileID: 0}
   carDeath: 0
+  full: 0
+  half: 0
+  quarter: 0
   particlePrefab: {fileID: 3690160118126398737, guid: 95ead76ef05530b43837624124209e61, type: 3}
 --- !u!114 &1580880463
 MonoBehaviour:
@@ -17821,6 +17874,9 @@ MonoBehaviour:
   car: {fileID: 0}
   playerHP: {fileID: 0}
   carDeath: 0
+  full: 0
+  half: 0
+  quarter: 0
   particlePrefab: {fileID: 3690160118126398737, guid: 95ead76ef05530b43837624124209e61, type: 3}
 --- !u!114 &1707433302
 MonoBehaviour:
@@ -18096,6 +18152,9 @@ MonoBehaviour:
   car: {fileID: 0}
   playerHP: {fileID: 0}
   carDeath: 0
+  full: 0
+  half: 0
+  quarter: 0
   particlePrefab: {fileID: 3690160118126398737, guid: 95ead76ef05530b43837624124209e61, type: 3}
 --- !u!114 &1710737095
 MonoBehaviour:
