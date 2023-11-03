@@ -12933,7 +12933,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
-  secondsInFullDay: 120
+  secondsInFullDay: 1440
   day: 0
 --- !u!4 &1201542101 stripped
 Transform:
@@ -23002,7 +23002,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3316975857144301922, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 425897504114666219}
   m_SourcePrefab: {fileID: 100100000, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
 --- !u!114 &425897504114666208 stripped
 MonoBehaviour:
@@ -23020,6 +23023,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7055757434369942014, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
   m_PrefabInstance: {fileID: 425897504114666207}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &425897504114666219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496838940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba8b688113d4ce9811b5a4c1281a9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSprite: {fileID: 425897504114666209}
+  DayOrNight: {fileID: 1200290598}
+  Human: {fileID: -1480409101, guid: 4c2cf95c08803cc48a6eca5db32fe6eb, type: 3}
+  Wolf: {fileID: -1784978969, guid: 5a3c3dcd0264a9b4391867f33b1b4718, type: 3}
 --- !u!1001 &2248893541652837531
 PrefabInstance:
   m_ObjectHideFlags: 0

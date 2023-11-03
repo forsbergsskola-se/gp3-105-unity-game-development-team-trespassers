@@ -30,7 +30,7 @@ namespace Items
                 SwitchWeapon();
             }
 
-            if (isEquipped =true)
+            if (isEquipped)
             {
                 if (Input.GetKeyDown(KeyCode.R))
                 {
