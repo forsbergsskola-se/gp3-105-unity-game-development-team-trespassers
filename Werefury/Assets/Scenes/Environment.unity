@@ -11348,7 +11348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textElement: {fileID: 923197534}
-  healthBarTracker: {fileID: 0}
+  healthBarTracker: {fileID: 1496838954}
 --- !u!222 &1092303989
 CanvasRenderer:
   m_ObjectHideFlags: 0
