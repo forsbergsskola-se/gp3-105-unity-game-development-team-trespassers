@@ -2,6 +2,7 @@ using System;
 using UI_Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
