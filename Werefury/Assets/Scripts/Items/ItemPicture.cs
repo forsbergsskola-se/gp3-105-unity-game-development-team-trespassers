@@ -9,6 +9,7 @@ namespace Items
     {
         public Image weieldImage;
         public Image weieldImage2;
+        public Image wieldImage3;
         public TextMeshProUGUI ammoText1;
         public TextMeshProUGUI ammoText2;
         public GameObject player;

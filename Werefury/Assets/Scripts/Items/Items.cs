@@ -28,12 +28,17 @@ namespace Items
             {
                 SwitchWeapon();
             }
-            
-            if (Input.GetKeyDown(KeyCode.R))
+
+            if (isEquipped =true)
             {
-                var weaponSpecific = HeldItem1.GetComponent<Weapon>();
-                gunscript.Reload(weaponSpecific);
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    var weaponSpecific = HeldItem1.GetComponent<Weapon>();
+                    gunscript.Reload(weaponSpecific);
+                }
+                
             }
+            
 
             // Handle input to throw the held item
             if (Input.GetKeyDown(KeyCode.G))

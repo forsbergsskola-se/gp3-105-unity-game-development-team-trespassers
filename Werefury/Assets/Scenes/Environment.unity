@@ -7641,6 +7641,7 @@ GameObject:
   - component: {fileID: 801623893}
   - component: {fileID: 801623896}
   - component: {fileID: 801623895}
+  - component: {fileID: 801623898}
   m_Layer: 5
   m_Name: Ammo
   m_TagString: Untagged
@@ -7707,6 +7708,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801623892}
   m_CullTransparentMesh: 1
+--- !u!114 &801623898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801623892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed45f12c9610b7149889b69f4ae02c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoSprite: {fileID: 1029981050}
+  equpWeapon: {fileID: 1496838950}
 --- !u!1001 &807579615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9036,7 +9051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &923197533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10493,7 +10508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029981047}
   - component: {fileID: 1029981049}
-  - component: {fileID: 1029981048}
+  - component: {fileID: 1029981050}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -10517,36 +10532,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -109, y: -7.600006}
+  m_AnchoredPosition: {x: -1.2, y: -7.600006}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1029981048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029981046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9764151, b: 0.9764151, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 2c1adeeea27ff7a44874f15de15a8f72, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!222 &1029981049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10555,6 +10543,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029981046}
   m_CullTransparentMesh: 1
+--- !u!114 &1029981050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029981046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2c1adeeea27ff7a44874f15de15a8f72, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &1034355250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15051,6 +15069,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998128357213573458, guid: 17df987e2d9132c4cb13ab30319bb0b2, type: 3}
       propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1496838950}
+    - target: {fileID: 8552658156779394798, guid: 17df987e2d9132c4cb13ab30319bb0b2, type: 3}
+      propertyPath: _items
       value: 
       objectReference: {fileID: 1496838950}
     - target: {fileID: 8552658156779394798, guid: 17df987e2d9132c4cb13ab30319bb0b2, type: 3}
@@ -22194,6 +22216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weieldImage: {fileID: 2084532003}
   weieldImage2: {fileID: 1416938479}
+  wieldImage3: {fileID: 0}
   ammoText1: {fileID: 1682432062}
   ammoText2: {fileID: 2133787937}
   player: {fileID: 1496838940}
@@ -22880,6 +22903,10 @@ PrefabInstance:
       propertyPath: gunscript
       value: 
       objectReference: {fileID: 425897504114666208}
+    - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
+      propertyPath: isEquipped
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1742682024978791251, guid: 1f6ba0758b48ac84ca2d3e8102e17ea1, type: 3}
       propertyPath: PlayerSprite
       value: 
