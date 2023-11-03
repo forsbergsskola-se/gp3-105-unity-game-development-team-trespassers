@@ -37,8 +37,6 @@ namespace Items
             GetComponents();
             ShowWeapon1();
             ShowWeapon2();
-            ShowAmmo1();
-            ShowAmmo2();
         }
 
         public void GetComponents()
@@ -130,28 +128,6 @@ namespace Items
             }
         }
 
-        private void ShowAmmo1()
-        {
-            if (weapon1 != null)
-            {
-                ammoText1.text = weapon1.mag.ToString();
-            }
-            else
-            {
-                ammoText1.text = "";
-            }
-        }
-
-        private void ShowAmmo2()
-        {
-            if (weapon2 != null)
-            {
-                ammoText2.text = weapon2.mag.ToString();
-            }
-            else
-            {
-                ammoText2.text = "";
-            }
-        }
+        
     }
 }

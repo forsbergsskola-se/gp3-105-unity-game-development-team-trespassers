@@ -2,6 +2,7 @@ using System;
 using UI_Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
@@ -11,7 +12,7 @@ namespace DefaultNamespace
         public Currency currency;
         
         private void Start()
-        {
+        {   //problem with buttons caused here.
             this.gameObject.SetActive(false);
         }
 
