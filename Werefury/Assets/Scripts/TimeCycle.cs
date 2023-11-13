@@ -24,7 +24,6 @@ public class TimeCycle : MonoBehaviour {
         {
             day = false;
         }
-        Debug.Log(t);
        // sun.intensity = sunIntensity;
     }
 }

@@ -9,7 +9,6 @@ namespace Items
     {
         public Image weieldImage;
         public Image weieldImage2;
-        public Image wieldImage3;
         public TextMeshProUGUI ammoText1;
         public TextMeshProUGUI ammoText2;
         public GameObject player;
@@ -30,6 +29,7 @@ namespace Items
             Color weieldImageColor2 = weieldImage.color;
             weieldImageColor2.a = 0f;
             weieldImage2.color = weieldImageColor; 
+            
         }
 
         public void FixedUpdate()
@@ -37,6 +37,7 @@ namespace Items
             GetComponents();
             ShowWeapon1();
             ShowWeapon2();
+            ShowAmmo();
         }
 
         public void GetComponents()
@@ -125,6 +126,34 @@ namespace Items
                 weieldImage2.sprite = null;
                 weieldImageColor.a = 0f;
                 weieldImage2.color = weieldImageColor; 
+            }
+        }
+
+        private void ShowAmmo()
+        {
+            
+            
+            if (weapon1 != null)
+            {
+                string ammo1 = weapon1.mag.ToString();
+                Debug.Log(ammo1);
+                ammoText1.text = ammo1;
+            }
+            else
+            {
+                ammoText1.text = "";
+            }
+            
+            
+            
+            if (weapon2 != null)
+            {
+                string ammo2 = weapon2.mag.ToString();
+                ammoText2.text = ammo2;
+            }
+            else
+            {
+                ammoText2.text = "";
             }
         }
 
