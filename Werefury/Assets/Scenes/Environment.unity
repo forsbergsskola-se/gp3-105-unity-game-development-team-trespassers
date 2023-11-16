@@ -12750,6 +12750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasQuest: 0
   questUI: {fileID: 88336121}
+  questObject: {fileID: 1056058394}
 --- !u!114 &1167996191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12764,6 +12765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCountGameObject: {fileID: 107634264}
   currencyCountGameObject: {fileID: 828101944}
+  QuestObject: {fileID: 1056058394}
+  QuestUi: {fileID: 88336121}
 --- !u!1 &1168511325 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c9ac834e8cee58549b9ff4d80dbd0a2b, type: 3}

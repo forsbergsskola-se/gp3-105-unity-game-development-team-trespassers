@@ -5,6 +5,7 @@ public class QuestGiver : MonoBehaviour
     public bool HasQuest = false;
     private bool inside;
     [SerializeField] private GameObject questUI;
+    [SerializeField] public GameObject questObject;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -23,10 +24,12 @@ public class QuestGiver : MonoBehaviour
         if (HasQuest)
         {
             questUI.SetActive(true);
+            questObject.SetActive(false);
         }
         else
         {
             questUI.SetActive(false);
+            questObject.SetActive(true);
         }
 
         if (inside == true)

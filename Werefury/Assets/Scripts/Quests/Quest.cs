@@ -5,6 +5,8 @@ public class Quest : MonoBehaviour
 {
     [SerializeField] private GameObject killCountGameObject;
     [SerializeField] private GameObject currencyCountGameObject;
+    [SerializeField] public GameObject QuestObject;
+    [SerializeField] public GameObject QuestUi;
     
     private QuestGiver questGiver;
     private KillCount killCount;
@@ -28,9 +30,13 @@ public class Quest : MonoBehaviour
 
        if (questGiver.HasQuest == true && QuestCondition(killCount.kills) && once == 0)
        {
+           
+            QuestUi.SetActive(true);
+            QuestObject.SetActive(false);
             QuestComplete = true;
             currency.currency += 250;
             once++;
+            questGiver.HasQuest = false;
        }
     }
 

@@ -136,7 +136,6 @@ namespace Items
             if (weapon1 != null)
             {
                 string ammo1 = weapon1.mag.ToString();
-                Debug.Log(ammo1);
                 ammoText1.text = ammo1;
             }
             else
