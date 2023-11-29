@@ -13,6 +13,7 @@ public class Gunscript : MonoBehaviour
     public bool triggerViable = true;
     [SerializeField]public float cooldown = 1.5f;
     private float reloadTime;
+    [SerializeField] private AudioSource audioSource;
 
     void shoot(GameObject hitSpecific)
     {
@@ -50,6 +51,7 @@ public class Gunscript : MonoBehaviour
             var hitSpecific = hit.transform.gameObject;
             Debug.Log(hit.transform.gameObject);
             shoot(hitSpecific);
+            audioSource.Play();
         }
     }
 

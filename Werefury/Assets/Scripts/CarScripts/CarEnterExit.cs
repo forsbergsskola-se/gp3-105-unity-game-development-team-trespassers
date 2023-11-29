@@ -13,9 +13,11 @@ namespace CarScripts
         [SerializeField] private SpriteRenderer spriteRenderer;
         private PlayerMovement playerMovement;
         private Collider playerCollider;
+        private AudioSource audiosource;
     
         private void Start()
         {
+            audiosource = this.GetComponent<AudioSource>();
             Player = GameObject.FindWithTag("Player");
             playerCollider = Player.GetComponentInChildren<Collider>();
         }
@@ -66,6 +68,7 @@ namespace CarScripts
     
         void EnterCar()
         {
+            audiosource.Play();
             gameObject.tag = "Player";
             Player.tag = "Untagged";
             spriteRenderer.enabled = false;
@@ -78,6 +81,7 @@ namespace CarScripts
 
         public void ExitCar()
         {
+            audiosource.Pause();
             gameObject.tag = "Untagged";
             Player.tag = "Player";
             spriteRenderer.enabled = true;
